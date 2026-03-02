@@ -1,0 +1,6 @@
+{
+  "Name": "LibraryForTenTabs",
+  "ProjectType": "Library",
+  "Description": "LibraryForTenTabs",
+  "MainFile": "NewActivity.xaml"
+}

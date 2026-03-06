@@ -36,7 +36,9 @@
     "projectProfile": "Developement",
     "outputType": "Library",
     "libraryOptions": {
-      "privateWorkflows": []
+      "privateWorkflows": [
+        "baseTemplate.xaml"
+      ]
     },
     "processOptions": {
       "ignoredFiles": []

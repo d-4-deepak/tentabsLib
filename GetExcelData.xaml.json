@@ -1,13 +1,13 @@
 {
-  "DisplayName": "searchandAddcart",
+  "DisplayName": "GetExcelData",
   "Tooltip": null,
   "HelpLink": null,
   "Color": null,
   "OriginalIconFileName": null,
   "Arguments": [
     {
-      "Name": "reportIdLocal",
-      "DisplayName": "reportIdLocal",
+      "Name": "dt_dataTable",
+      "DisplayName": "dt_dataTable",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,

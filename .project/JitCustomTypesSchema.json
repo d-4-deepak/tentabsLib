@@ -1,0 +1,63 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 1,
+        "idRef": "NExtractDataGeneric`1_1",
+        "hash": "NExtractDataGeneric`1_1|DataTable|d21FOPVNvPThn8oGLc1c4dHVMEbchuvOg1sdQqrpdE",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Item",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Item Src",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Item Alt Text",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Item Url",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Description",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Description Url",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Price",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Quantity",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Total",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column-5",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "LibraryForTenTabs_Studio.Generated.TypedDataTable1",
+        "hash": "NExtractDataGeneric`1_1|DataTable|QiHlGpscsKRXvXaQSe7v65GqH7jl0CeGo3Vj2jVDH0",
+        "assemblyName": "LibraryForTenTabs_Studio.Generated.TypedDataTable1"
+      }
+    }
+  ]
+}

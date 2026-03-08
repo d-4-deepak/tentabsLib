@@ -30,30 +30,6 @@
       "DataSourceItems": null
     },
     {
-      "Name": "year",
-      "DisplayName": "year",
-      "Category": null,
-      "Tooltip": null,
-      "Placeholder": "2030",
-      "Widget": null,
-      "IsRequired": false,
-      "IsPrincipal": true,
-      "ArgumentType": 0,
-      "DataSourceItems": null
-    },
-    {
-      "Name": "month",
-      "DisplayName": "month",
-      "Category": null,
-      "Tooltip": null,
-      "Placeholder": "02",
-      "Widget": null,
-      "IsRequired": false,
-      "IsPrincipal": true,
-      "ArgumentType": 0,
-      "DataSourceItems": null
-    },
-    {
       "Name": "cvc",
       "DisplayName": "cvc",
       "Category": null,
@@ -95,6 +71,42 @@
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "Browser",
+      "DisplayName": "Browser",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "chrome.exe",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "expiryYear",
+      "DisplayName": "expiryYear",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "2030",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "expiryMonth",
+      "DisplayName": "expiryMonth",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "02",
       "Widget": null,
       "IsRequired": false,
       "IsPrincipal": true,

@@ -66,18 +66,6 @@
       "DataSourceItems": null
     },
     {
-      "Name": "mrOrMrs",
-      "DisplayName": "mrOrMrs",
-      "Category": null,
-      "Tooltip": null,
-      "Placeholder": "mr",
-      "Widget": null,
-      "IsRequired": false,
-      "IsPrincipal": true,
-      "ArgumentType": 0,
-      "DataSourceItems": null
-    },
-    {
       "Name": "Browser",
       "DisplayName": "Browser",
       "Category": null,

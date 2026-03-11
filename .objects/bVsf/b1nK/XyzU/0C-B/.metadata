@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Blue Top",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "0C-BkXE4aEKRf-hAtK8SSw",
+  "Reference": "7MqrRqWujkq82rLUFnFQVw/0C-BkXE4aEKRf-hAtK8SSw",
+  "ParentRef": "7MqrRqWujkq82rLUFnFQVw/XyzUuU61b0mFHb27h_x09A",
+  "Created": "2026-03-11T12:01:48.5779716Z",
+  "Updated": "2026-03-11T12:01:48.5779716Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.1.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -38,6 +38,9 @@
       <x:String>System.Security</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
       <x:String>System.Reflection</x:String>
+      <x:String>ReporterForUiPath.Enums</x:String>
+      <x:String>ReporterForUiPath.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -111,7 +114,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SearchProducts" sap:VirtualizedContainerService.HintSize="877.2,7751.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SearchProducts" sap:VirtualizedContainerService.HintSize="921,7489" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
     </Sequence.Variables>
@@ -120,15 +123,15 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="556.8,328" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="558,329" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,217.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="Sequence_11">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ra:CreateReport ContinueOnError="{x:Null}" DisplayName="Create Report" sap:VirtualizedContainerService.HintSize="416,157.6" sap2010:WorkflowViewState.IdRef="CreateReport_1" ReportName="Search report">
+          <ra:CreateReport ContinueOnError="{x:Null}" DisplayName="Create Report" sap:VirtualizedContainerService.HintSize="416,158" sap2010:WorkflowViewState.IdRef="CreateReport_1" ReportName="Search report">
             <ra:CreateReport.ReportLocation>
               <InArgument x:TypeArguments="x:String">
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\Downloads\\Reports"</CSharpValue>
@@ -143,15 +146,15 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="556.8,279.2" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="558,280" sap2010:WorkflowViewState.IdRef="CommentOut_2">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,168.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,169" sap2010:WorkflowViewState.IdRef="Sequence_12">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ra:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="416,108.8" sap2010:WorkflowViewState.IdRef="StartSuite_1" SuiteName="Search suite">
+          <ra:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="416,109" sap2010:WorkflowViewState.IdRef="StartSuite_1" SuiteName="Search suite">
             <ra:StartSuite.ReportId>
               <InArgument x:TypeArguments="x:Int32">
                 <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">reportIdLocal</CSharpValue>
@@ -166,7 +169,7 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="556.8,117.6" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="Search product test">
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="558,118" sap2010:WorkflowViewState.IdRef="StartTest_3" Priority="Low" TestName="Search product test">
       <ra:StartTest.ReportId>
         <InArgument x:TypeArguments="x:Int32">
           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">reportIdLocal</CSharpValue>
@@ -183,58 +186,40 @@
         </OutArgument>
       </ra:StartTest.testId>
     </ra:StartTest>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Automation Exercise" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="556.8,7003.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="1c8e728d-a855-4cdc-9041-3a75cabcc0fc" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="558,6739" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="1c8e728d-a855-4cdc-9041-3a75cabcc0fc" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="555.2,6809.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556,6493" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ' Products'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="521.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1c8e728d-a855-4cdc-9041-3a75cabcc0fc" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click ' Products'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1c8e728d-a855-4cdc-9041-3a75cabcc0fc" Version="V5">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="8a871e28-da08-47f5-a641-b946fdf7b5c4" DesignTimeRectangle="869, 220, 97, 27" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Products' tag='A' href='/products' /&gt;" Guid="10724b13-0a83-4d6c-a051-d22c2fc4417b" InformativeScreenshot="62e3c2abaec681324cc4e83029a9570c.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="8a871e28-da08-47f5-a641-b946fdf7b5c4" DesignTimeRectangle="728, 125, 78, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Products' tag='A' href='/products' /&gt;" Guid="10724b13-0a83-4d6c-a051-d22c2fc4417b" InformativeScreenshot="022395b4fdc54852e8171f891d81b957.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
               </uix:NClick.Target>
             </uix:NClick>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="521.6,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
               <ui:LogMessage.Message>
                 <InArgument x:TypeArguments="x:Object">
                   <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">"clicked on product tab"</CSharpValue>
                 </InArgument>
               </ui:LogMessage.Message>
             </ui:LogMessage>
-            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="521.6,126.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="521.6,318.4" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="5" ScopeIdentifier="1c8e728d-a855-4cdc-9041-3a75cabcc0fc" Version="V5">
-              <uix:NMouseScroll.SearchedElement>
-                <uix:SearchedElement>
-                  <uix:SearchedElement.InUiElement>
-                    <InArgument x:TypeArguments="ui:UiElement" />
-                  </uix:SearchedElement.InUiElement>
-                  <uix:SearchedElement.OutUiElement>
-                    <OutArgument x:TypeArguments="ui:UiElement" />
-                  </uix:SearchedElement.OutUiElement>
-                  <uix:SearchedElement.Target>
-                    <uix:TargetAnchorable BrowserURL="automationexercise.com/products" CVScreenId="705fe674-5fd7-4f6f-9ab6-ac3586aa9e46" DesignTimeRectangle="391, 748, 375, 50" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='search_product' tag='INPUT' /&gt;" Guid="382daa4b-a9f7-4552-8d50-1c64a1242ca8" InformativeScreenshot="0aab5479a02413c1c266ca0795653274.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - All Products' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                  </uix:SearchedElement.Target>
-                  <uix:SearchedElement.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:SearchedElement.Timeout>
-                </uix:SearchedElement>
-              </uix:NMouseScroll.SearchedElement>
-            </uix:NMouseScroll>
-            <uix:NCheckState DisplayName="Check App State 'All Products'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="521.6,5924.8" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="1c8e728d-a855-4cdc-9041-3a75cabcc0fc" Version="V5">
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="522,127" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NCheckState DisplayName="Check App State 'All Products'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="522,5925" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="1c8e728d-a855-4cdc-9041-3a75cabcc0fc" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="520,4959.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="520,4959" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
                         <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">"navigated to product page successfully"</CSharpValue>
@@ -514,6 +499,9 @@
           <uix:TargetApp.Arguments>
             <InArgument x:TypeArguments="x:String" />
           </uix:TargetApp.Arguments>
+          <uix:TargetApp.FilePath>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.FilePath>
           <uix:TargetApp.Selector>
             <InArgument x:TypeArguments="x:String">
               <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">"&lt;html app='"+ Browser +"' title='Automation Exercise' /&gt;"</CSharpValue>

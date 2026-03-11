@@ -128,24 +128,29 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="RemoveFromCart" sap:VirtualizedContainerService.HintSize="877.2,2840.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="RemoveFromCart" sap:VirtualizedContainerService.HintSize="921,2734" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
+      <Variable x:TypeArguments="x:String" Name="productName">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Blue Top</Literal>
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.4,328" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="522,329" sap2010:WorkflowViewState.IdRef="CommentOut_7">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,217.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="Sequence_12">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ra:CreateReport ContinueOnError="{x:Null}" DisplayName="Create Report" sap:VirtualizedContainerService.HintSize="416,157.6" sap2010:WorkflowViewState.IdRef="CreateReport_2" ReportName="removal from cart">
+          <ra:CreateReport ContinueOnError="{x:Null}" DisplayName="Create Report" sap:VirtualizedContainerService.HintSize="416,158" sap2010:WorkflowViewState.IdRef="CreateReport_2" ReportName="removal from cart">
             <ra:CreateReport.ReportLocation>
               <InArgument x:TypeArguments="x:String">
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\Downloads\\Reports"</CSharpValue>
@@ -160,15 +165,15 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.4,279.2" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="522,280" sap2010:WorkflowViewState.IdRef="CommentOut_8">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,168.8" sap2010:WorkflowViewState.IdRef="Sequence_13">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,169" sap2010:WorkflowViewState.IdRef="Sequence_13">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ra:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="416,108.8" sap2010:WorkflowViewState.IdRef="StartSuite_2" SuiteName="removal from cart suite">
+          <ra:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="416,109" sap2010:WorkflowViewState.IdRef="StartSuite_2" SuiteName="removal from cart suite">
             <ra:StartSuite.ReportId>
               <InArgument x:TypeArguments="x:Int32">
                 <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">reportIdLocal</CSharpValue>
@@ -183,101 +188,212 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="486.4,117.6" sap2010:WorkflowViewState.IdRef="StartTest_2" Priority="Low" TestName="removal from cart test">
-      <ra:StartTest.ReportId>
-        <InArgument x:TypeArguments="x:Int32">
-          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">reportIdLocal</CSharpValue>
-        </InArgument>
-      </ra:StartTest.ReportId>
-      <ra:StartTest.SuiteId>
-        <InArgument x:TypeArguments="x:String">
-          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">suiteIdLocal</CSharpValue>
-        </InArgument>
-      </ra:StartTest.SuiteId>
-      <ra:StartTest.testId>
-        <OutArgument x:TypeArguments="x:String">
-          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">testIdLocal</CSharpReference>
-        </OutArgument>
-      </ra:StartTest.testId>
-    </ra:StartTest>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,2092.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="857796f0-f763-4ef3-b46d-011657808368" Version="V2">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="522,280" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,169" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="416,109" sap2010:WorkflowViewState.IdRef="StartTest_2" Priority="Low" TestName="removal from cart test">
+            <ra:StartTest.ReportId>
+              <InArgument x:TypeArguments="x:Int32">
+                <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">reportIdLocal</CSharpValue>
+              </InArgument>
+            </ra:StartTest.ReportId>
+            <ra:StartTest.SuiteId>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">suiteIdLocal</CSharpValue>
+              </InArgument>
+            </ra:StartTest.SuiteId>
+            <ra:StartTest.testId>
+              <OutArgument x:TypeArguments="x:String">
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">testIdLocal</CSharpReference>
+              </OutArgument>
+            </ra:StartTest.testId>
+          </ra:StartTest>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="522,1822" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="857796f0-f763-4ef3-b46d-011657808368" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1847.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,1576" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="857796f0-f763-4ef3-b46d-011657808368" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Men Tshirt'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,198" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="857796f0-f763-4ef3-b46d-011657808368" Version="V5">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/view_cart" CVScreenId="5be84ce6-c211-4e49-95f6-beacf63b61d6" DesignTimeRectangle="1612, 432, 16, 20" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cart_info_table' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='I' /&gt;" Guid="71fae7f5-cead-48f3-b431-940640a478b5" InformativeScreenshot="90d52d039180a11b83f2a9723b8f8f77.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Checkout' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/view_cart" CVScreenId="14f73747-67d4-47e2-8d0f-7ba7e66c028b" CvTextArea="1314, 511, 16, 16" CvTextArgument="X" CvType="Text" DesignTimeRectangle="1309, 506, 27, 27" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cart_info_table' /&gt;&lt;webctrl class='cart_quantity_delete' /&gt;" Guid="77d6eea2-a530-41bf-9745-724471eca6ab" InformativeScreenshot="e54d33ce77d43ac8bf92bdcd83f18f3c.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Checkout' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="14f73747-67d4-47e2-8d0f-7ba7e66c028b" DesignTimeRectangle="413, 497, 92, 22" ElementType="Text" FuzzyAccuracy="0.43" Guid="6406a6f5-b18c-4edd-96f5-8c2b7f215901" SearchSteps="FuzzySelector">
+                        <uix:Target.FuzzySelectorArgument>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">"&lt;webctrl visibleinnertext='"+productName+"' /&gt;"</CSharpValue>
+                          </InArgument>
+                        </uix:Target.FuzzySelectorArgument>
+                      </uix:Target>
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'Cart is empty!'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,1585.6" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="857796f0-f763-4ef3-b46d-011657808368" Version="V5">
-              <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,620" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,360" sap2010:WorkflowViewState.IdRef="CommentOut_11">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_18">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="857796f0-f763-4ef3-b46d-011657808368" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="automationexercise.com/view_cart" CVScreenId="da7d8d5c-6472-49ba-aa62-de6de90e46a8" CvTextArea="1325, 411, 15, 16" CvTextArgument="X" CvType="Text" DesignTimeRectangle="1327, 412, 12, 16" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cart_info_table' tag='TABLE' /&gt;&lt;webctrl tag='I' parentclass='cart_quantity_delete' /&gt;" Guid="0c28c369-904b-404c-8d91-519255e43173" InformativeScreenshot="a546744410f0bc1064d2ca89346df5f1.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Checkout' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CVScreenId="da7d8d5c-6472-49ba-aa62-de6de90e46a8" CvTextArea="383, 397, 94, 20" CvType="Text" DesignTimeRectangle="384, 397, 92, 22" ElementType="Text" FuzzyAccuracy="1" Guid="8a077fe4-662c-421b-abbf-5d07160f736e" SearchSteps="FuzzySelector, CV">
+                              <uix:Target.CvTextArgument>
+                                <InArgument x:TypeArguments="x:String">
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">productName</CSharpValue>
+                                </InArgument>
+                              </uix:Target.CvTextArgument>
+                              <uix:Target.FuzzySelectorArgument>
+                                <InArgument x:TypeArguments="x:String">
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">"&lt;webctrl id='cart_info_table' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl tag='A' innertext='"+productName+"' tableCol='2' check:innerText='"+productName+"' /&gt;"</CSharpValue>
+                                </InArgument>
+                              </uix:Target.FuzzySelectorArgument>
+                            </uix:Target>
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+            <uix:NCheckState DisplayName="Check App State 'Men Tshirt'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486,823" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="857796f0-f763-4ef3-b46d-011657808368" Version="V5">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Warn">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
-                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">"product is removed successfully from cart"</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">"failed"</CSharpValue>
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,377.6" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Product removed from cart successfully" str_in_expectedStep="Product should be removed from the cart" str_in_stepDescription="Verify Product Removed From Cart" str_in_stepName="Verify Product Removed From Cart">
-                    <ar:passedStep.str_in_reportId>
-                      <InArgument x:TypeArguments="x:Int32">
-                        <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">reportIdLocal</CSharpValue>
-                      </InArgument>
-                    </ar:passedStep.str_in_reportId>
-                    <ar:passedStep.str_in_testId>
-                      <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">testIdLocal</CSharpValue>
-                      </InArgument>
-                    </ar:passedStep.str_in_testId>
-                  </ar:passedStep>
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,620" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_16">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
-                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">"Failed to remove product from cart"</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">"Pass"</CSharpValue>
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,377.6" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Product  is still present in the cart" str_in_expectedStep="Product should be removed from the cart" str_in_stepDescription="Verify that the selected product is successfully removed from the shopping cart" str_in_stepName="Verify Product Removed From Cart">
-                    <ar:failedStep.str_in_reportId>
-                      <InArgument x:TypeArguments="x:Int32">
-                        <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">reportIdLocal</CSharpValue>
-                      </InArgument>
-                    </ar:failedStep.str_in_reportId>
-                    <ar:failedStep.str_in_testId>
-                      <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">testIdLocal</CSharpValue>
-                      </InArgument>
-                    </ar:failedStep.str_in_testId>
-                  </ar:failedStep>
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/view_cart" CVScreenId="d54a8d4a-8859-4895-a1a1-8b646f1dce4c" CvElementArea="242, 486, 1429, 98" CvTextArea="746, 516, 152, 27" CvTextArgument="Cart is empty!" CvType="Button" DesignTimeRectangle="748, 516, 150, 25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='empty_cart' tag='B' aaname='Cart is empty!' /&gt;" Guid="766381b3-0336-4fe0-88fd-c7ff6a7b664a" InformativeScreenshot="0fae4ac258250c1f71f3854c6a8178fe.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Checkout' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/view_cart" CVScreenId="da7d8d5c-6472-49ba-aa62-de6de90e46a8" DesignTimeRectangle="384, 397, 92, 22" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="e0fade8f-74eb-4742-a93e-f075fa502d60" InformativeScreenshot="dbe9b35ac42883e5104873b437f474ca.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Checkout' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">"&lt;webctrl id='cart_info_table' tag='TABLE' /&gt;&lt;webctrl tag='A' colName='Description' innertext='"+productName+"' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                </uix:TargetAnchorable>
               </uix:NCheckState.Target>
             </uix:NCheckState>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,131" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NCheckState DisplayName="Check App State 'Cart is empty!'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1583" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="857796f0-f763-4ef3-b46d-011657808368" Version="V5">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,621" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+                          <ui:LogMessage.Message>
+                            <InArgument x:TypeArguments="x:Object">
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">"product is removed successfully from cart"</CSharpValue>
+                            </InArgument>
+                          </ui:LogMessage.Message>
+                        </ui:LogMessage>
+                        <ar:passedStep sap:VirtualizedContainerService.HintSize="416,377.6" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Product removed from cart successfully" str_in_expectedStep="Product should be removed from the cart" str_in_stepDescription="Verify Product Removed From Cart" str_in_stepName="Verify Product Removed From Cart">
+                          <ar:passedStep.str_in_reportId>
+                            <InArgument x:TypeArguments="x:Int32">
+                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">reportIdLocal</CSharpValue>
+                            </InArgument>
+                          </ar:passedStep.str_in_reportId>
+                          <ar:passedStep.str_in_testId>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">testIdLocal</CSharpValue>
+                            </InArgument>
+                          </ar:passedStep.str_in_testId>
+                        </ar:passedStep>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,620" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
+                          <ui:LogMessage.Message>
+                            <InArgument x:TypeArguments="x:Object">
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">"Failed to remove product from cart"</CSharpValue>
+                            </InArgument>
+                          </ui:LogMessage.Message>
+                        </ui:LogMessage>
+                        <ar:failedStep sap:VirtualizedContainerService.HintSize="416,377.6" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Product  is still present in the cart" str_in_expectedStep="Product should be removed from the cart" str_in_stepDescription="Verify that the selected product is successfully removed from the shopping cart" str_in_stepName="Verify Product Removed From Cart">
+                          <ar:failedStep.str_in_reportId>
+                            <InArgument x:TypeArguments="x:Int32">
+                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">reportIdLocal</CSharpValue>
+                            </InArgument>
+                          </ar:failedStep.str_in_reportId>
+                          <ar:failedStep.str_in_testId>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">testIdLocal</CSharpValue>
+                            </InArgument>
+                          </ar:failedStep.str_in_testId>
+                        </ar:failedStep>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="automationexercise.com/view_cart" CVScreenId="d54a8d4a-8859-4895-a1a1-8b646f1dce4c" CvElementArea="242, 486, 1429, 98" CvTextArea="746, 516, 152, 27" CvTextArgument="Cart is empty!" CvType="Button" DesignTimeRectangle="748, 516, 150, 25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='empty_cart' tag='B' aaname='Cart is empty!' /&gt;" Guid="766381b3-0336-4fe0-88fd-c7ff6a7b664a" InformativeScreenshot="0fae4ac258250c1f71f3854c6a8178fe.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Checkout' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

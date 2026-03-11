@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LdiF5DYrS0uZ1mjJklG7kw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="automationexercise.com/view_cart" CVScreenId="5d2788ef-8f83-43a8-a797-94da5bc74c50" DesignTimeRectangle="383, 613, 78, 22" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="d0f40c1a-f0cd-4c3a-9231-0945e17403ae" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Checkout' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.FullSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">"&lt;webctrl id='cart_info_table' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='A' innertext='"+getProductTitle+"' /&gt;"</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FullSelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="13ec8a5ee15d188b48275286dd842796.jpg" xmlns="">0bwtLCpGXKE2T8OfUi95qnw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

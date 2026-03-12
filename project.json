@@ -4,7 +4,7 @@
   "description": "LibraryForTenTabs",
   "main": "NewActivity.xaml",
   "dependencies": {
-    "atuipath_utilities": "1.0.6",
+    "atuipath_utilities": "1.0.9",
     "UiPath.System.Activities": "25.12.0-preview",
     "UiPath.UIAutomation.Activities": "26.1.0-preview"
   },
@@ -12,7 +12,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "26.0.185.0",
-  "projectVersion": "1.0.45",
+  "projectVersion": "1.0.49",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,

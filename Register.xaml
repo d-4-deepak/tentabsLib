@@ -141,7 +141,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Register" sap:VirtualizedContainerService.HintSize="921,18971" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Register" sap:VirtualizedContainerService.HintSize="750,18971" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
     </Sequence.Variables>
@@ -254,7 +254,13 @@
                   </ar:passedStep>
                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Signup / Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="automationexercise.com/login" CVScreenId="736a5448-0fd9-4385-8bc0-58d52935fde9" DesignTimeRectangle="897, 115, 136, 30" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='LI' innertext=' Signup / Login' /&gt;" Guid="7f53542d-36cf-47de-a7ec-1d6234818c86" InformativeScreenshot="fb0fdbcc7677e59bee195614d13aef7d.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup / Login' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                      <uix:TargetAnchorable BrowserURL="automationexercise.com/login" CVScreenId="736a5448-0fd9-4385-8bc0-58d52935fde9" DesignTimeRectangle="897, 115, 136, 30" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='LI' innertext=' Signup / Login' /&gt;" Guid="7f53542d-36cf-47de-a7ec-1d6234818c86" InformativeScreenshot="fb0fdbcc7677e59bee195614d13aef7d.jpg" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.ScopeSelectorArgument>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_86">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup / Login' /&gt;"</CSharpValue>
+                          </InArgument>
+                        </uix:TargetAnchorable.ScopeSelectorArgument>
+                      </uix:TargetAnchorable>
                     </uix:NClick.Target>
                   </uix:NClick>
                   <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,319" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
@@ -320,7 +326,13 @@
                             </InArgument>
                           </uix:NTypeInto.ClickBeforeMode>
                           <uix:NTypeInto.Target>
-                            <uix:TargetAnchorable BrowserURL="automationexercise.com/login" CVScreenId="11756794-b30a-4ad8-a927-782a541e45a1" DesignTimeRectangle="816, 590, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' data-qa='signup-name' name='name' /&gt;" Guid="9e7b8587-f8b3-4855-aa0d-da2550c5d7c6" InformativeScreenshot="fc973ae7a9b19438593c76356f10b780.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup / Login' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                            <uix:TargetAnchorable BrowserURL="automationexercise.com/login" CVScreenId="11756794-b30a-4ad8-a927-782a541e45a1" DesignTimeRectangle="816, 590, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' data-qa='signup-name' name='name' /&gt;" Guid="9e7b8587-f8b3-4855-aa0d-da2550c5d7c6" InformativeScreenshot="fc973ae7a9b19438593c76356f10b780.jpg" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.ScopeSelectorArgument>
+                                <InArgument x:TypeArguments="x:String">
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_89">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup / Login' /&gt;"</CSharpValue>
+                                </InArgument>
+                              </uix:TargetAnchorable.ScopeSelectorArgument>
+                            </uix:TargetAnchorable>
                           </uix:NTypeInto.Target>
                           <uix:NTypeInto.Text>
                             <InArgument x:TypeArguments="x:String">
@@ -347,7 +359,13 @@
                         </ui:LogMessage>
                         <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                           <uix:NTypeInto.Target>
-                            <uix:TargetAnchorable BrowserURL="automationexercise.com/login" CVScreenId="11756794-b30a-4ad8-a927-782a541e45a1" CvElementArea="814, 638, 364, 43" CvType="InputBox" DesignTimeRectangle="816, 640, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' data-qa='signup-email' placeholder='Email Address' /&gt;" Guid="55814dd6-717f-4e12-a74d-da4afaf4089b" InformativeScreenshot="a918b0b7bd3836b8871a8d2c05d13a1a.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup / Login' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                            <uix:TargetAnchorable BrowserURL="automationexercise.com/login" CVScreenId="11756794-b30a-4ad8-a927-782a541e45a1" CvElementArea="814, 638, 364, 43" CvType="InputBox" DesignTimeRectangle="816, 640, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' data-qa='signup-email' placeholder='Email Address' /&gt;" Guid="55814dd6-717f-4e12-a74d-da4afaf4089b" InformativeScreenshot="a918b0b7bd3836b8871a8d2c05d13a1a.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.ScopeSelectorArgument>
+                                <InArgument x:TypeArguments="x:String">
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_90">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup / Login' /&gt;"</CSharpValue>
+                                </InArgument>
+                              </uix:TargetAnchorable.ScopeSelectorArgument>
+                            </uix:TargetAnchorable>
                           </uix:NTypeInto.Target>
                           <uix:NTypeInto.Text>
                             <InArgument x:TypeArguments="x:String">
@@ -374,7 +392,13 @@
                         </ui:LogMessage>
                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Signup'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                           <uix:NClick.Target>
-                            <uix:TargetAnchorable BrowserURL="automationexercise.com/login" CVScreenId="6f72c7c0-8938-4281-af43-b0fcba1358c9" DesignTimeRectangle="816, 690, 93, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Signup' tag='BUTTON' data-qa='signup-button' innertext='Signup' /&gt;" Guid="8de6011c-482c-4026-8702-c6a4c379b427" InformativeScreenshot="a2dbe21327496d775cd23da7fcd07da2.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup / Login' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                            <uix:TargetAnchorable BrowserURL="automationexercise.com/login" CVScreenId="6f72c7c0-8938-4281-af43-b0fcba1358c9" DesignTimeRectangle="816, 690, 93, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Signup' tag='BUTTON' data-qa='signup-button' innertext='Signup' /&gt;" Guid="8de6011c-482c-4026-8702-c6a4c379b427" InformativeScreenshot="a2dbe21327496d775cd23da7fcd07da2.jpg" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.ScopeSelectorArgument>
+                                <InArgument x:TypeArguments="x:String">
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_91">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup / Login' /&gt;"</CSharpValue>
+                                </InArgument>
+                              </uix:TargetAnchorable.ScopeSelectorArgument>
+                            </uix:TargetAnchorable>
                           </uix:NClick.Target>
                         </uix:NClick>
                         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="558,179" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info">
@@ -426,7 +450,13 @@
                                     </sap:WorkflowViewStateService.ViewState>
                                     <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Radiobutton'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                       <uix:NClick.Target>
-                                        <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="46156d4e-e503-4549-8a85-20afd9657c96" CvElementArea="345, 206, 21, 21" CvTextArea="370, 207, 23, 13" CvTextArgument=".Mr." CvType="RadioButton" DesignTimeRectangle="348, 195, 44, 40" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='top' tag='LABEL' visibleinnertext=' Mr.' /&gt;" Guid="3525b399-4ae4-4662-8821-1b06675cca78" InformativeScreenshot="e9d590264dcc435e55b0da91a63919b4.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                                        <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="46156d4e-e503-4549-8a85-20afd9657c96" CvElementArea="345, 206, 21, 21" CvTextArea="370, 207, 23, 13" CvTextArgument=".Mr." CvType="RadioButton" DesignTimeRectangle="348, 195, 44, 40" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='top' tag='LABEL' visibleinnertext=' Mr.' /&gt;" Guid="3525b399-4ae4-4662-8821-1b06675cca78" InformativeScreenshot="e9d590264dcc435e55b0da91a63919b4.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                                          <uix:TargetAnchorable.ScopeSelectorArgument>
+                                            <InArgument x:TypeArguments="x:String">
+                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_93">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                            </InArgument>
+                                          </uix:TargetAnchorable.ScopeSelectorArgument>
+                                        </uix:TargetAnchorable>
                                       </uix:NClick.Target>
                                     </uix:NClick>
                                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info">
@@ -447,7 +477,13 @@
                                     </sap:WorkflowViewStateService.ViewState>
                                     <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Radiobutton'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                       <uix:NClick.Target>
-                                        <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="de3068ac-58f3-432d-8ef8-6b41248a3e25" CvElementArea="423, 206, 20, 21" CvTextArea="449, 207, 30, 13" CvTextArgument="Mrs." CvType="RadioButton" DesignTimeRectangle="426, 195, 53, 40" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='top' tag='LABEL' visibleinnertext=' Mrs.' /&gt;" Guid="4f81013f-6900-4649-a512-a87dc48a927c" InformativeScreenshot="b10bc6755e3395bbf046b323856ba6d4.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                                        <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="de3068ac-58f3-432d-8ef8-6b41248a3e25" CvElementArea="423, 206, 20, 21" CvTextArea="449, 207, 30, 13" CvTextArgument="Mrs." CvType="RadioButton" DesignTimeRectangle="426, 195, 53, 40" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='top' tag='LABEL' visibleinnertext=' Mrs.' /&gt;" Guid="4f81013f-6900-4649-a512-a87dc48a927c" InformativeScreenshot="b10bc6755e3395bbf046b323856ba6d4.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                                          <uix:TargetAnchorable.ScopeSelectorArgument>
+                                            <InArgument x:TypeArguments="x:String">
+                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_94">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                            </InArgument>
+                                          </uix:TargetAnchorable.ScopeSelectorArgument>
+                                        </uix:TargetAnchorable>
                                       </uix:NClick.Target>
                                     </uix:NClick>
                                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info">
@@ -462,12 +498,17 @@
                               </If>
                               <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Password *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="81997d8d-5beb-4392-b40c-a4988ce1624a" CvElementArea="326, 423, 362, 42" CvType="InputBox" DesignTimeRectangle="328, 425, 360, 40" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control' aaname='Password *' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="36ec603d-6f6d-493a-8d0a-f9259d0e5974" InformativeScreenshot="f436df811f3d3224053a5774f703c21a.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="81997d8d-5beb-4392-b40c-a4988ce1624a" CvElementArea="326, 423, 362, 42" CvType="InputBox" DesignTimeRectangle="328, 425, 360, 40" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control' aaname='Password *' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="36ec603d-6f6d-493a-8d0a-f9259d0e5974" InformativeScreenshot="f436df811f3d3224053a5774f703c21a.jpg" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                     <uix:TargetAnchorable.Anchors>
                                       <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target CVScreenId="81997d8d-5beb-4392-b40c-a4988ce1624a" CvTextArea="327, 400, 77, 17" CvTextArgument="Password *" CvType="Text" DesignTimeRectangle="328, 400, 74, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Password ' tag='LABEL' innertext='Password *' check:innerText='Password *' /&gt;" Guid="052bfd70-8c22-4c3a-8a77-01ede3173c62" SearchSteps="FuzzySelector, CV" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_95">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
                                   </uix:TargetAnchorable>
                                 </uix:NTypeInto.Target>
                                 <uix:NTypeInto.Text>
@@ -536,12 +577,17 @@
                                   </scg:List>
                                 </uix:NSelectItem.Items>
                                 <uix:NSelectItem.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="85073778-589b-49e2-ae68-90b0756fa685" CvElementArea="326, 303, 87, 37" CvType="InputBox" DesignTimeRectangle="328, 305, 82, 34" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='days' tag='SELECT' type='' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="47a60f86-ae6b-435c-85ac-7052f4bcff85" InformativeScreenshot="93b5b20f4fc3b5371335178482be8e27.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="85073778-589b-49e2-ae68-90b0756fa685" CvElementArea="326, 303, 87, 37" CvType="InputBox" DesignTimeRectangle="328, 305, 82, 34" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='days' tag='SELECT' type='' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="47a60f86-ae6b-435c-85ac-7052f4bcff85" InformativeScreenshot="93b5b20f4fc3b5371335178482be8e27.jpg" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                     <uix:TargetAnchorable.Anchors>
                                       <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target CVScreenId="85073778-589b-49e2-ae68-90b0756fa685" CvTextArea="327, 282, 86, 14" CvTextArgument="Date of Birth" CvType="Text" DesignTimeRectangle="328, 280, 84, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Date of Birth' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Date of Birth' /&gt;" Guid="8f9b1ad7-2959-428a-8189-2774ff8f06f2" SearchSteps="FuzzySelector, CV" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_96">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
                                   </uix:TargetAnchorable>
                                 </uix:NSelectItem.Target>
                               </uix:NSelectItem>
@@ -576,7 +622,13 @@
                                   </scg:List>
                                 </uix:NSelectItem.Items>
                                 <uix:NSelectItem.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="7ed5ebdf-b8da-40ec-9d87-8db0fdf62334" CvElementArea="456, 304, 93, 36" CvType="InputBox" DesignTimeRectangle="458, 305, 88, 34" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='months' tag='SELECT' /&gt;" Guid="58dd67ff-fd50-48eb-aaa1-412689f1ac0f" InformativeScreenshot="1c44279c4c12b6bc6a7329d753c7883b.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="7ed5ebdf-b8da-40ec-9d87-8db0fdf62334" CvElementArea="456, 304, 93, 36" CvType="InputBox" DesignTimeRectangle="458, 305, 88, 34" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='months' tag='SELECT' /&gt;" Guid="58dd67ff-fd50-48eb-aaa1-412689f1ac0f" InformativeScreenshot="1c44279c4c12b6bc6a7329d753c7883b.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_97">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
+                                  </uix:TargetAnchorable>
                                 </uix:NSelectItem.Target>
                               </uix:NSelectItem>
                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="Info">
@@ -647,7 +699,13 @@
                                   </scg:List>
                                 </uix:NSelectItem.Items>
                                 <uix:NSelectItem.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="27eedd9d-8373-4383-bf76-ecd1e8db6009" CvElementArea="586, 304, 86, 37" CvType="InputBox" DesignTimeRectangle="588, 305, 82, 34" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='years' tag='SELECT' /&gt;" Guid="b23ea5d1-ba65-4c13-ad9e-eaf4f647baaf" InformativeScreenshot="1f4dab898f3a092db77d4b9572d51e7b.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="27eedd9d-8373-4383-bf76-ecd1e8db6009" CvElementArea="586, 304, 86, 37" CvType="InputBox" DesignTimeRectangle="588, 305, 82, 34" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='years' tag='SELECT' /&gt;" Guid="b23ea5d1-ba65-4c13-ad9e-eaf4f647baaf" InformativeScreenshot="1f4dab898f3a092db77d4b9572d51e7b.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_98">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
+                                  </uix:TargetAnchorable>
                                 </uix:NSelectItem.Target>
                               </uix:NSelectItem>
                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="Info">
@@ -659,29 +717,45 @@
                               </ui:LogMessage>
                               <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign up for our newslet…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,198" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NClick.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="54df9c49-0d0c-4eba-aaf5-5be795b15e59" CvElementArea="326, 156, 18, 18" CvType="CheckBox" DesignTimeRectangle="328, 158, 15, 15" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='newsletter' tag='INPUT' type='checkbox' class='' aaname='Sign up for our newsletter!' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="edc239fc-2601-40a3-b287-3d034cb1540b" InformativeScreenshot="3d124e9bd34fbe9a3e3ce19a418f7f1b.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="54df9c49-0d0c-4eba-aaf5-5be795b15e59" CvElementArea="326, 156, 18, 18" CvType="CheckBox" DesignTimeRectangle="328, 158, 15, 15" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='newsletter' tag='INPUT' type='checkbox' class='' aaname='Sign up for our newsletter!' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="edc239fc-2601-40a3-b287-3d034cb1540b" InformativeScreenshot="3d124e9bd34fbe9a3e3ce19a418f7f1b.jpg" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                     <uix:TargetAnchorable.Anchors>
                                       <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target CVScreenId="54df9c49-0d0c-4eba-aaf5-5be795b15e59" CvTextArea="346, 156, 166, 17" CvTextArgument="Sign up for our newsletter!" CvType="Text" DesignTimeRectangle="348, 156, 163, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Sign up for our newsletter!' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Sign up for our newsletter!' /&gt;" Guid="453118dd-da1e-4dd0-8581-e2d568cb7777" SearchSteps="FuzzySelector, CV" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_99">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
                                   </uix:TargetAnchorable>
                                 </uix:NClick.Target>
                               </uix:NClick>
                               <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Receive special offers …'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,198" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NClick.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="1017d475-a7ba-481b-a021-c1275a0a8aab" CvElementArea="326, 181, 18, 18" CvType="CheckBox" DesignTimeRectangle="328, 183, 15, 15" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='optin' tag='INPUT' type='checkbox' class='' aaname='Receive special offers from our partners!' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c80f35bb-457a-4003-89e2-955475ddba49" InformativeScreenshot="96865da980d9409851ff1d87af1d9caa.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="1017d475-a7ba-481b-a021-c1275a0a8aab" CvElementArea="326, 181, 18, 18" CvType="CheckBox" DesignTimeRectangle="328, 183, 15, 15" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='optin' tag='INPUT' type='checkbox' class='' aaname='Receive special offers from our partners!' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c80f35bb-457a-4003-89e2-955475ddba49" InformativeScreenshot="96865da980d9409851ff1d87af1d9caa.jpg" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                     <uix:TargetAnchorable.Anchors>
                                       <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target CVScreenId="1017d475-a7ba-481b-a021-c1275a0a8aab" CvTextArea="347, 181, 254, 17" CvTextArgument="Receive special offers from our partners!" CvType="Text" DesignTimeRectangle="348, 181, 252, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Receive special offers from our partners!' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Receive special offers from our partners!' /&gt;" Guid="95cd59c6-98df-4402-b8dc-f15978521a14" SearchSteps="FuzzySelector, CV" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_100">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
                                   </uix:TargetAnchorable>
                                 </uix:NClick.Target>
                               </uix:NClick>
                               <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT first_name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="b16c54c4-6d4d-4b49-8c83-88aed455d4ac" DesignTimeRectangle="328, 306, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='first_name' matching:id='fuzzy' fuzzylevel:id='0.0' tag='INPUT' type='text' class='form-control' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='First name *' /&gt;" Guid="60674640-558b-4a13-897f-d79b886991fc" InformativeScreenshot="d9650767105daddddbbc247dd923f7b0.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None" />
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="b16c54c4-6d4d-4b49-8c83-88aed455d4ac" DesignTimeRectangle="328, 306, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='first_name' matching:id='fuzzy' fuzzylevel:id='0.0' tag='INPUT' type='text' class='form-control' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='First name *' /&gt;" Guid="60674640-558b-4a13-897f-d79b886991fc" InformativeScreenshot="d9650767105daddddbbc247dd923f7b0.jpg" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_101">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
+                                  </uix:TargetAnchorable>
                                 </uix:NTypeInto.Target>
                                 <uix:NTypeInto.Text>
                                   <InArgument x:TypeArguments="x:String">
@@ -708,7 +782,13 @@
                               </ui:LogMessage>
                               <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT last_name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="ebd0f282-b3db-426d-b07d-ef5cfcfd596b" CvElementArea="326, 384, 363, 44" CvType="InputBox" DesignTimeRectangle="328, 386, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='last_name' tag='INPUT' type='text' class='form-control' aaname='Last name *' /&gt;" Guid="8729ffee-a2cd-487a-bb06-e775b2ca7aa2" InformativeScreenshot="40566a5a9016a98407f4e9b850d41989.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None" />
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="ebd0f282-b3db-426d-b07d-ef5cfcfd596b" CvElementArea="326, 384, 363, 44" CvType="InputBox" DesignTimeRectangle="328, 386, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='last_name' tag='INPUT' type='text' class='form-control' aaname='Last name *' /&gt;" Guid="8729ffee-a2cd-487a-bb06-e775b2ca7aa2" InformativeScreenshot="40566a5a9016a98407f4e9b850d41989.jpg" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_102">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
+                                  </uix:TargetAnchorable>
                                 </uix:NTypeInto.Target>
                                 <uix:NTypeInto.Text>
                                   <InArgument x:TypeArguments="x:String">
@@ -735,7 +815,13 @@
                               </ui:LogMessage>
                               <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT company'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="38a45ca0-931b-49ef-8b3f-90a9e28a1934" CvElementArea="326, 363, 363, 44" CvType="InputBox" DesignTimeRectangle="328, 366, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='company' matching:id='fuzzy' fuzzylevel:id='0.0' tag='INPUT' type='text' class='form-control' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Company' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="55b2a828-4599-417e-a403-630148f31e4a" InformativeScreenshot="8560da3a5f0efde7339272719df43a52.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None" />
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="38a45ca0-931b-49ef-8b3f-90a9e28a1934" CvElementArea="326, 363, 363, 44" CvType="InputBox" DesignTimeRectangle="328, 366, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='company' matching:id='fuzzy' fuzzylevel:id='0.0' tag='INPUT' type='text' class='form-control' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Company' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="55b2a828-4599-417e-a403-630148f31e4a" InformativeScreenshot="8560da3a5f0efde7339272719df43a52.jpg" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_103">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
+                                  </uix:TargetAnchorable>
                                 </uix:NTypeInto.Target>
                                 <uix:NTypeInto.Text>
                                   <InArgument x:TypeArguments="x:String">
@@ -762,7 +848,13 @@
                               </ui:LogMessage>
                               <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT address1'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="38a45ca0-931b-49ef-8b3f-90a9e28a1934" CvElementArea="326, 474, 363, 44" CvType="InputBox" DesignTimeRectangle="328, 476, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='address1' tag='INPUT' type='text' class='form-control' aaname='Address * (Street address, P.O. Box, Company name, etc.)' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="fc440d89-98fe-4ab5-aaeb-eb41e2bb7113" InformativeScreenshot="79c9e271114286c95740fbb797899c15.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="38a45ca0-931b-49ef-8b3f-90a9e28a1934" CvElementArea="326, 474, 363, 44" CvType="InputBox" DesignTimeRectangle="328, 476, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='address1' tag='INPUT' type='text' class='form-control' aaname='Address * (Street address, P.O. Box, Company name, etc.)' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="fc440d89-98fe-4ab5-aaeb-eb41e2bb7113" InformativeScreenshot="79c9e271114286c95740fbb797899c15.jpg" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_104">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
+                                  </uix:TargetAnchorable>
                                 </uix:NTypeInto.Target>
                                 <uix:NTypeInto.Text>
                                   <InArgument x:TypeArguments="x:String">
@@ -805,12 +897,17 @@
                                   </scg:List>
                                 </uix:NSelectItem.Items>
                                 <uix:NSelectItem.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="188ed1ae-1689-4816-8fa9-4d09980d8f1a" CvElementArea="327, 635, 362, 36" CvType="InputBox" DesignTimeRectangle="328, 636, 360, 34" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='country' tag='SELECT' type='' class='form-control' aaname='Country * ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="97780235-7977-410a-a108-0a70ce01a452" InformativeScreenshot="592441cba3412fcd0d2538ce966a951f.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="188ed1ae-1689-4816-8fa9-4d09980d8f1a" CvElementArea="327, 635, 362, 36" CvType="InputBox" DesignTimeRectangle="328, 636, 360, 34" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='country' tag='SELECT' type='' class='form-control' aaname='Country * ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="97780235-7977-410a-a108-0a70ce01a452" InformativeScreenshot="592441cba3412fcd0d2538ce966a951f.jpg" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                     <uix:TargetAnchorable.Anchors>
                                       <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target CVScreenId="188ed1ae-1689-4816-8fa9-4d09980d8f1a" CvTextArea="327, 611, 64, 19" CvTextArgument="Country *" CvType="Text" DesignTimeRectangle="328, 611, 62, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Country ' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Country *' /&gt;" Guid="0dfc03c5-b701-411a-8095-7dd574cad3f8" SearchSteps="FuzzySelector, CV" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_105">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
                                   </uix:TargetAnchorable>
                                 </uix:NSelectItem.Target>
                               </uix:NSelectItem>
@@ -823,7 +920,13 @@
                               </ui:LogMessage>
                               <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT state'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="2f49a5b1-a450-4722-b426-e58f75189478" CvElementArea="326, 507, 363, 43" CvType="InputBox" DesignTimeRectangle="328, 510, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='state' tag='INPUT' type='text' class='form-control' aaname='State * ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="90fbcedb-a931-48bb-a035-9274eb736bf6" InformativeScreenshot="7428f549f117a8ccf8adaa12fa006211.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="2f49a5b1-a450-4722-b426-e58f75189478" CvElementArea="326, 507, 363, 43" CvType="InputBox" DesignTimeRectangle="328, 510, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='state' tag='INPUT' type='text' class='form-control' aaname='State * ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="90fbcedb-a931-48bb-a035-9274eb736bf6" InformativeScreenshot="7428f549f117a8ccf8adaa12fa006211.jpg" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_106">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
+                                  </uix:TargetAnchorable>
                                 </uix:NTypeInto.Target>
                                 <uix:NTypeInto.Text>
                                   <InArgument x:TypeArguments="x:String">
@@ -850,7 +953,13 @@
                               </ui:LogMessage>
                               <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT city'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="b774b6db-f9c0-4f12-bbde-8eecd59e1b3e" CvElementArea="326, 587, 363, 43" CvType="InputBox" DesignTimeRectangle="328, 590, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='city' tag='INPUT' type='text' class='form-control' aaname='City * ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="c8450d35-659a-4add-ad74-818307c31609" InformativeScreenshot="d46fed081dd26d2f2abf5ac27c752dcf.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="b774b6db-f9c0-4f12-bbde-8eecd59e1b3e" CvElementArea="326, 587, 363, 43" CvType="InputBox" DesignTimeRectangle="328, 590, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='city' tag='INPUT' type='text' class='form-control' aaname='City * ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="c8450d35-659a-4add-ad74-818307c31609" InformativeScreenshot="d46fed081dd26d2f2abf5ac27c752dcf.jpg" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_107">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
+                                  </uix:TargetAnchorable>
                                 </uix:NTypeInto.Target>
                                 <uix:NTypeInto.Text>
                                   <InArgument x:TypeArguments="x:String">
@@ -877,7 +986,13 @@
                               </ui:LogMessage>
                               <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT zipcode'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="6be28b2c-a2ad-4fcf-a5b3-774073011e10" CvElementArea="326, 468, 363, 43" CvType="InputBox" DesignTimeRectangle="328, 470, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='zipcode' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="638216d6-d8b9-4b95-af1f-c123a8dfa89e" InformativeScreenshot="0dc8cc9d1c9fed57ec3ff036d71eb6b5.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="6be28b2c-a2ad-4fcf-a5b3-774073011e10" CvElementArea="326, 468, 363, 43" CvType="InputBox" DesignTimeRectangle="328, 470, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='zipcode' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="638216d6-d8b9-4b95-af1f-c123a8dfa89e" InformativeScreenshot="0dc8cc9d1c9fed57ec3ff036d71eb6b5.jpg" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_108">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
+                                  </uix:TargetAnchorable>
                                 </uix:NTypeInto.Target>
                                 <uix:NTypeInto.Text>
                                   <InArgument x:TypeArguments="x:String">
@@ -904,7 +1019,13 @@
                               </ui:LogMessage>
                               <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT mobile_number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="943bf1aa-ad8b-4660-bdcf-9acea8a41f42" CvElementArea="326, 548, 363, 43" CvType="InputBox" DesignTimeRectangle="328, 550, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='mobile_number' tag='INPUT' type='text' class='form-control' aaname='Mobile Number * ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="cdd3b020-501f-4c1b-9ad7-f937bbca33e6" InformativeScreenshot="196713380ad92442a3d5f801afd6d5c9.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="943bf1aa-ad8b-4660-bdcf-9acea8a41f42" CvElementArea="326, 548, 363, 43" CvType="InputBox" DesignTimeRectangle="328, 550, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='mobile_number' tag='INPUT' type='text' class='form-control' aaname='Mobile Number * ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="cdd3b020-501f-4c1b-9ad7-f937bbca33e6" InformativeScreenshot="196713380ad92442a3d5f801afd6d5c9.jpg" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_109">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
+                                  </uix:TargetAnchorable>
                                 </uix:NTypeInto.Target>
                                 <uix:NTypeInto.Text>
                                   <InArgument x:TypeArguments="x:String">
@@ -931,7 +1052,13 @@
                               </ui:LogMessage>
                               <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create Account'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,198" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NClick.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="01c44136-a5c2-4132-83fa-5e1e84805a62" CvElementArea="326, 277, 150, 36" CvTextArea="351, 289, 99, 13" CvTextArgument="Create Account" CvType="Button" DesignTimeRectangle="328, 280, 146, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Create Account' /&gt;" Guid="d97da96e-0a01-4e47-bfd4-e96ddee4b8bc" InformativeScreenshot="39ee6b3e716b8aad106483648f8ef3f4.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="01c44136-a5c2-4132-83fa-5e1e84805a62" CvElementArea="326, 277, 150, 36" CvTextArea="351, 289, 99, 13" CvTextArgument="Create Account" CvType="Button" DesignTimeRectangle="328, 280, 146, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Create Account' /&gt;" Guid="d97da96e-0a01-4e47-bfd4-e96ddee4b8bc" InformativeScreenshot="39ee6b3e716b8aad106483648f8ef3f4.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_110">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
+                                  </uix:TargetAnchorable>
                                 </uix:NClick.Target>
                               </uix:NClick>
                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_32" Level="Info">
@@ -973,7 +1100,13 @@
                                     </ar:passedStep>
                                     <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="2" DisplayName="Click 'Continue'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,198" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                       <uix:NClick.Target>
-                                        <uix:TargetAnchorable BrowserURL="automationexercise.com/account_created" CVScreenId="c745bb28-3a47-4f40-8600-61c7b417a086" CvElementArea="1094, 459, 84, 35" CvTextArea="1105, 469, 60, 15" CvTextArgument="Continue" CvType="Button" DesignTimeRectangle="1095, 461, 81, 32" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='form' tag='A' /&gt;" Guid="a3e0a30d-975a-442f-8f43-b28b6f181d4a" InformativeScreenshot="0bf9ffb39773eb8eee09f30f84f078e3.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Account Created' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                        <uix:TargetAnchorable BrowserURL="automationexercise.com/account_created" CVScreenId="c745bb28-3a47-4f40-8600-61c7b417a086" CvElementArea="1094, 459, 84, 35" CvTextArea="1105, 469, 60, 15" CvTextArgument="Continue" CvType="Button" DesignTimeRectangle="1095, 461, 81, 32" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='form' tag='A' /&gt;" Guid="a3e0a30d-975a-442f-8f43-b28b6f181d4a" InformativeScreenshot="0bf9ffb39773eb8eee09f30f84f078e3.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                          <uix:TargetAnchorable.ScopeSelectorArgument>
+                                            <InArgument x:TypeArguments="x:String">
+                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_112">"&lt;html app='"+Browser+"' title='Automation Exercise - Account Created' /&gt;"</CSharpValue>
+                                            </InArgument>
+                                          </uix:TargetAnchorable.ScopeSelectorArgument>
+                                        </uix:TargetAnchorable>
                                       </uix:NClick.Target>
                                     </uix:NClick>
                                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="LogMessage_33" Level="Info">
@@ -985,7 +1118,13 @@
                                     </ui:LogMessage>
                                     <uix:NGetText DisplayName="Get Text 'kaamDev'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,147" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                       <uix:NGetText.Target>
-                                        <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="362aecef-885b-4ecd-b04b-388da0f46ff9" DesignTimeRectangle="1198, 149, 58, 17" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='B' aaname='*' innertext='*' parentclass='nav navbar-nav' /&gt;" Guid="d4c0e868-9a45-4037-8e70-96faded0fcbd" InformativeScreenshot="014e728bbd5d71576cd300884f09be46.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                                        <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="362aecef-885b-4ecd-b04b-388da0f46ff9" DesignTimeRectangle="1198, 149, 58, 17" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='B' aaname='*' innertext='*' parentclass='nav navbar-nav' /&gt;" Guid="d4c0e868-9a45-4037-8e70-96faded0fcbd" InformativeScreenshot="014e728bbd5d71576cd300884f09be46.jpg" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+                                          <uix:TargetAnchorable.ScopeSelectorArgument>
+                                            <InArgument x:TypeArguments="x:String">
+                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_113">"&lt;html app='"+Browser+"' title='Automation Exercise' /&gt;"</CSharpValue>
+                                            </InArgument>
+                                          </uix:TargetAnchorable.ScopeSelectorArgument>
+                                        </uix:TargetAnchorable>
                                       </uix:NGetText.Target>
                                       <uix:NGetText.TextString>
                                         <OutArgument x:TypeArguments="x:String">
@@ -1130,13 +1269,19 @@
                                   </Sequence>
                                 </uix:NCheckState.IfNotExists>
                                 <uix:NCheckState.Target>
-                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/account_created" CVScreenId="db676de5-76a4-47f1-a1e8-10729251d67c" CvTextArea="656, 318, 189, 16" CvTextArgument="ACCOUNT CREATED!" CvType="Text" DesignTimeRectangle="658, 317, 187, 20" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='B' aaname='Account Created!' innertext='Account Created!' /&gt;" Guid="37476fd2-0e9f-4448-acb5-9fb60f69efbf" InformativeScreenshot="77797d37675006ae95ef34d4992af7f7.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Account Created' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                                  <uix:TargetAnchorable BrowserURL="automationexercise.com/account_created" CVScreenId="db676de5-76a4-47f1-a1e8-10729251d67c" CvTextArea="656, 318, 189, 16" CvTextArgument="ACCOUNT CREATED!" CvType="Text" DesignTimeRectangle="658, 317, 187, 20" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='B' aaname='Account Created!' innertext='Account Created!' /&gt;" Guid="37476fd2-0e9f-4448-acb5-9fb60f69efbf" InformativeScreenshot="77797d37675006ae95ef34d4992af7f7.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                                    <uix:TargetAnchorable.ScopeSelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_111">"&lt;html app='"+Browser+"' title='Automation Exercise - Account Created' /&gt;"</CSharpValue>
+                                      </InArgument>
+                                    </uix:TargetAnchorable.ScopeSelectorArgument>
+                                  </uix:TargetAnchorable>
                                 </uix:NCheckState.Target>
                               </uix:NCheckState>
                             </Sequence>
                           </uix:NCheckState.IfExists>
                           <uix:NCheckState.IfNotExists>
-                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="522,621" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="556,621" sap2010:WorkflowViewState.IdRef="Sequence_9">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1164,13 +1309,19 @@
                             </Sequence>
                           </uix:NCheckState.IfNotExists>
                           <uix:NCheckState.Target>
-                            <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="acab948c-8e4b-4c6c-bbb0-67654661f2d1" CvTextArea="348, 218, 320, 19" CvTextArgument="ENTER ACCOUNT INFORMATION" CvType="Text" DesignTimeRectangle="349, 218, 318, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='B' aaname='Enter Account Information' innertext='Enter Account Information' /&gt;" Guid="f46a8dc7-8078-4d28-a2e2-077abfdc8963" InformativeScreenshot="eec141b2241cc044a54da36bee355a02.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                            <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="acab948c-8e4b-4c6c-bbb0-67654661f2d1" CvTextArea="348, 218, 320, 19" CvTextArgument="ENTER ACCOUNT INFORMATION" CvType="Text" DesignTimeRectangle="349, 218, 318, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='B' aaname='Enter Account Information' innertext='Enter Account Information' /&gt;" Guid="f46a8dc7-8078-4d28-a2e2-077abfdc8963" InformativeScreenshot="eec141b2241cc044a54da36bee355a02.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.ScopeSelectorArgument>
+                                <InArgument x:TypeArguments="x:String">
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_92">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup' /&gt;"</CSharpValue>
+                                </InArgument>
+                              </uix:TargetAnchorable.ScopeSelectorArgument>
+                            </uix:TargetAnchorable>
                           </uix:NCheckState.Target>
                         </uix:NCheckState>
                       </Sequence>
                     </uix:NCheckState.IfExists>
                     <uix:NCheckState.IfNotExists>
-                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="558,621" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="592,621" sap2010:WorkflowViewState.IdRef="Sequence_7">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1198,7 +1349,13 @@
                       </Sequence>
                     </uix:NCheckState.IfNotExists>
                     <uix:NCheckState.Target>
-                      <uix:TargetAnchorable BrowserURL="automationexercise.com/login" CVScreenId="11756794-b30a-4ad8-a927-782a541e45a1" DesignTimeRectangle="816, 690, 93, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Signup' tag='BUTTON' /&gt;" Guid="c99c82ad-9516-4f43-9146-3db6826dd040" InformativeScreenshot="5a8df2ac6ab7c65b293f228bd55cd894.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup / Login' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="automationexercise.com/login" CVScreenId="11756794-b30a-4ad8-a927-782a541e45a1" DesignTimeRectangle="816, 690, 93, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Signup' tag='BUTTON' /&gt;" Guid="c99c82ad-9516-4f43-9146-3db6826dd040" InformativeScreenshot="5a8df2ac6ab7c65b293f228bd55cd894.jpg" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.ScopeSelectorArgument>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_88">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup / Login' /&gt;"</CSharpValue>
+                          </InArgument>
+                        </uix:TargetAnchorable.ScopeSelectorArgument>
+                      </uix:TargetAnchorable>
                     </uix:NCheckState.Target>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1210,7 +1367,7 @@
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="594,621" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="628,621" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1238,7 +1395,13 @@
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="f5e89058-d107-4228-90a6-a6bd73caa001" CvTextArea="660, 128, 38, 13" CvTextArgument="Home" CvType="Text" DesignTimeRectangle="641, 125, 57, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Home' tag='A' /&gt;" Guid="d2a52a95-fe24-45cb-88f4-cefaee635ed1" InformativeScreenshot="3237574a259ff798377d0784f86c8b7a.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="f5e89058-d107-4228-90a6-a6bd73caa001" CvTextArea="660, 128, 38, 13" CvTextArgument="Home" CvType="Text" DesignTimeRectangle="641, 125, 57, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Home' tag='A' /&gt;" Guid="d2a52a95-fe24-45cb-88f4-cefaee635ed1" InformativeScreenshot="3237574a259ff798377d0784f86c8b7a.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_87">"&lt;html app='"+Browser+"' title='Automation Exercise' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
               </uix:NCheckState.Target>
             </uix:NCheckState>
           </Sequence>

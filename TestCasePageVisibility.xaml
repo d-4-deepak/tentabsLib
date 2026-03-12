@@ -123,9 +123,10 @@
       <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestCasePageVisibility" sap:VirtualizedContainerService.HintSize="921,2614" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TestCasePageVisibility" sap:VirtualizedContainerService.HintSize="750,2614" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
     </Sequence.Variables>
@@ -250,7 +251,13 @@
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/test_cases" CVScreenId="d80f43dd-a6d6-4b9f-acdb-4b8a83ca1cfe" CvTextArea="230, 387, 679, 17" CvTextArgument="Below Is the list of test Cases for you to practice the Automation. Click on the scenario for detailed Test Steps:" CvType="Text" DesignTimeRectangle="231, 387, 678, 16" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='SPAN' aaname='Below is the list of test Cases for you to practice the Automation. Click on the scenario for detailed Test Steps:' innertext='Below is the list of test Cases for you to practice the Automation. Click on the scenario for detailed Test Steps:' /&gt;" Guid="c839c0bc-756b-40b5-8c24-5be18be2608e" InformativeScreenshot="e6c023aa587c2b47191f710c8d36535c.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Practice Website for UI Testing - Test Cases' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/test_cases" CVScreenId="d80f43dd-a6d6-4b9f-acdb-4b8a83ca1cfe" CvTextArea="230, 387, 679, 17" CvTextArgument="Below Is the list of test Cases for you to practice the Automation. Click on the scenario for detailed Test Steps:" CvType="Text" DesignTimeRectangle="231, 387, 678, 16" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='SPAN' aaname='Below is the list of test Cases for you to practice the Automation. Click on the scenario for detailed Test Steps:' innertext='Below is the list of test Cases for you to practice the Automation. Click on the scenario for detailed Test Steps:' /&gt;" Guid="c839c0bc-756b-40b5-8c24-5be18be2608e" InformativeScreenshot="e6c023aa587c2b47191f710c8d36535c.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">"&lt;html app='"+Browser+"' title='Automation Practice Website for UI Testing - Test Cases' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
               </uix:NCheckState.Target>
             </uix:NCheckState>
           </Sequence>

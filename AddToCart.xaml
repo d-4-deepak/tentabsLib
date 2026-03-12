@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="AddToCart" this:AddToCart.Browser="chrome.exe" this:AddToCart.reportIdLocal="0" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ar="clr-namespace:atuipath_utilities.Report;assembly=atuipath_utilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="AddToCart" this:AddToCart.Browser="msedge.exe" this:AddToCart.reportIdLocal="0" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ar="clr-namespace:atuipath_utilities.Report;assembly=atuipath_utilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="Browser" Type="InArgument(x:String)" />
     <x:Property Name="suiteIdLocal" Type="InArgument(x:String)" />
@@ -134,7 +134,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AddToCart" sap:VirtualizedContainerService.HintSize="921,3759" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AddToCart" sap:VirtualizedContainerService.HintSize="830,3649" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
       <Variable x:TypeArguments="x:String" Name="getAddedProductTitle" />
@@ -193,35 +193,24 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="488,280" sap2010:WorkflowViewState.IdRef="CommentOut_9">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,169" sap2010:WorkflowViewState.IdRef="Sequence_16">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="416,109" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="Add to cart">
-            <ra:StartTest.ReportId>
-              <InArgument x:TypeArguments="x:Int32">
-                <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">reportIdLocal</CSharpValue>
-              </InArgument>
-            </ra:StartTest.ReportId>
-            <ra:StartTest.SuiteId>
-              <InArgument x:TypeArguments="x:String">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">suiteIdLocal</CSharpValue>
-              </InArgument>
-            </ra:StartTest.SuiteId>
-            <ra:StartTest.testId>
-              <OutArgument x:TypeArguments="x:String">
-                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">testIdLocal</CSharpReference>
-              </OutArgument>
-            </ra:StartTest.testId>
-          </ra:StartTest>
-        </Sequence>
-      </ui:CommentOut.Body>
-    </ui:CommentOut>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,2847" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="51b7f910-8642-41a4-9b1d-65af449e2cd1" Version="V2">
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="488,118" sap2010:WorkflowViewState.IdRef="StartTest_2" Priority="Low" TestName="Add to cart">
+      <ra:StartTest.ReportId>
+        <InArgument x:TypeArguments="x:Int32">
+          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">reportIdLocal</CSharpValue>
+        </InArgument>
+      </ra:StartTest.ReportId>
+      <ra:StartTest.SuiteId>
+        <InArgument x:TypeArguments="x:String">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">suiteIdLocal</CSharpValue>
+        </InArgument>
+      </ra:StartTest.SuiteId>
+      <ra:StartTest.testId>
+        <OutArgument x:TypeArguments="x:String">
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">testIdLocal</CSharpReference>
+        </OutArgument>
+      </ra:StartTest.testId>
+    </ra:StartTest>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,2899" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="51b7f910-8642-41a4-9b1d-65af449e2cd1" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -235,7 +224,13 @@
             </sap:WorkflowViewStateService.ViewState>
             <uix:NGetText DisplayName="Get Text 'Men Tshirt'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,147" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="51b7f910-8642-41a4-9b1d-65af449e2cd1" Version="V5">
               <uix:NGetText.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/product_details/2" CVScreenId="4b7ba6e3-3aaf-4e30-a6f9-37ae0b616025" CvType="AnyWordGroup" DesignTimeRectangle="1157, 437, 514, 27" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H2' aaname='*' idx='3' /&gt;" Guid="d91ee729-72bf-4cf2-b68d-b38cb2b0e5f1" InformativeScreenshot="0ea3e4a37bacbe8262797a9d08bc0e7d.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Product Details' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/product_details/2" CVScreenId="4b7ba6e3-3aaf-4e30-a6f9-37ae0b616025" CvType="AnyWordGroup" DesignTimeRectangle="1157, 437, 514, 27" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H2' aaname='*' idx='3' /&gt;" Guid="d91ee729-72bf-4cf2-b68d-b38cb2b0e5f1" InformativeScreenshot="0ea3e4a37bacbe8262797a9d08bc0e7d.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">"&lt;html app='"+Browser+"' title='Automation Exercise - Product Details' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
               </uix:NGetText.Target>
               <uix:NGetText.TextString>
                 <OutArgument x:TypeArguments="x:String">
@@ -245,28 +240,51 @@
             </uix:NGetText>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add to cart'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="51b7f910-8642-41a4-9b1d-65af449e2cd1" Version="V5">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/product_details/2" CVScreenId="4b7ba6e3-3aaf-4e30-a6f9-37ae0b616025" CvElementArea="1491, 553, 147, 46" CvTextArea="1532, 566, 90, 18" CvTextArgument="Add to cart" CvType="Button" DesignTimeRectangle="1493, 555, 143, 42" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' /&gt;" Guid="989997e0-568a-4c05-a335-fba5a2f24324" InformativeScreenshot="ccacbce1d6094e90cccdac9c7e82c79a.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Product Details' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/product_details/2" CVScreenId="4b7ba6e3-3aaf-4e30-a6f9-37ae0b616025" CvElementArea="1491, 553, 147, 46" CvTextArea="1532, 566, 90, 18" CvTextArgument="Add to cart" CvType="Button" DesignTimeRectangle="1493, 555, 143, 42" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' /&gt;" Guid="989997e0-568a-4c05-a335-fba5a2f24324" InformativeScreenshot="ccacbce1d6094e90cccdac9c7e82c79a.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">"&lt;html app='"+Browser+"' title='Automation Exercise - Product Details' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
             <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'View Cart'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="51b7f910-8642-41a4-9b1d-65af449e2cd1" Version="V5">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/product_details/2" CVScreenId="a6c4124c-30f4-4a83-9aa2-86fe01d53243" CvTextArea="909, 475, 79, 17" CvTextArgument="View Cart" CvType="Text" DesignTimeRectangle="912, 474, 76, 20" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='U' aaname='View Cart' /&gt;" Guid="aebd1cee-6a59-4b44-8755-bd457ce87220" InformativeScreenshot="a400e4ebb17335714a38ea165686a393.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Product Details' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/product_details/2" CVScreenId="a6c4124c-30f4-4a83-9aa2-86fe01d53243" CvTextArea="909, 475, 79, 17" CvTextArgument="View Cart" CvType="Text" DesignTimeRectangle="912, 474, 76, 20" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='U' aaname='View Cart' /&gt;" Guid="aebd1cee-6a59-4b44-8755-bd457ce87220" InformativeScreenshot="a400e4ebb17335714a38ea165686a393.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">"&lt;html app='"+Browser+"' title='Automation Exercise - Product Details' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sleeveless Dress'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="51b7f910-8642-41a4-9b1d-65af449e2cd1" Version="V5">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/view_cart" CVScreenId="85e1b16f-5265-43bc-925f-0241c24fb9a5" DesignTimeRectangle="383, 529, 155, 22" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="c533f753-9ea0-4896-8c3b-778bf0c9a414" InformativeScreenshot="044430fbd9127a70b69d8de78de89bd2.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Checkout' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/view_cart" CVScreenId="85e1b16f-5265-43bc-925f-0241c24fb9a5" DesignTimeRectangle="383, 529, 155, 22" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="c533f753-9ea0-4896-8c3b-778bf0c9a414" InformativeScreenshot="044430fbd9127a70b69d8de78de89bd2.jpg" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
                   <uix:TargetAnchorable.FullSelectorArgument>
                     <InArgument x:TypeArguments="x:String">
                       <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">"&lt;webctrl id='cart_info_table' tag='TABLE' /&gt;&lt;webctrl tag='A' colName='Description' innertext='"+getProductTitle+"' parentclass='cart_description' /&gt;"</CSharpValue>
                     </InArgument>
                   </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">"&lt;html app='"+Browser+"' title='Automation Exercise - Product Details' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
             <uix:NGetText DisplayName="Get Text 'Men Tshirt'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,147" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="51b7f910-8642-41a4-9b1d-65af449e2cd1" Version="V5">
               <uix:NGetText.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/product_details/2" CVScreenId="4b7ba6e3-3aaf-4e30-a6f9-37ae0b616025" CvType="AnyWordGroup" DesignTimeRectangle="1157, 437, 514, 27" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H2' aaname='*' idx='3' /&gt;" Guid="d91ee729-72bf-4cf2-b68d-b38cb2b0e5f1" InformativeScreenshot="0ea3e4a37bacbe8262797a9d08bc0e7d.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Product Details' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/product_details/2" CVScreenId="4b7ba6e3-3aaf-4e30-a6f9-37ae0b616025" CvType="AnyWordGroup" DesignTimeRectangle="1157, 437, 514, 27" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H2' aaname='*' idx='3' /&gt;" Guid="d91ee729-72bf-4cf2-b68d-b38cb2b0e5f1" InformativeScreenshot="0ea3e4a37bacbe8262797a9d08bc0e7d.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">"&lt;html app='"+Browser+"' title='Automation Exercise - Product Details' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
               </uix:NGetText.Target>
               <uix:NGetText.TextString>
                 <OutArgument x:TypeArguments="x:String">
@@ -296,7 +314,13 @@
                   </ui:LogMessage>
                   <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'Cart'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="51b7f910-8642-41a4-9b1d-65af449e2cd1" Version="V5">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="automationexercise.com/product_details/1" CVScreenId="a03107b9-5cdf-4214-bf80-d2d47513b402" CvTextArea="1026, 157, 37, 17" CvTextArgument="Cart" CvType="Text" DesignTimeRectangle="1004, 155, 58, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Cart' tag='A' /&gt;" Guid="9cfb765f-36d1-4009-a17d-71792ff5a63c" InformativeScreenshot="268a3083f51dc8663940a32824e8c407.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Product Details' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="automationexercise.com/product_details/1" CVScreenId="a03107b9-5cdf-4214-bf80-d2d47513b402" CvTextArea="1026, 157, 37, 17" CvTextArgument="Cart" CvType="Text" DesignTimeRectangle="1004, 155, 58, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Cart' tag='A' /&gt;" Guid="9cfb765f-36d1-4009-a17d-71792ff5a63c" InformativeScreenshot="268a3083f51dc8663940a32824e8c407.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.ScopeSelectorArgument>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">"&lt;html app='"+Browser+"' title='Automation Exercise - Product Details' /&gt;"</CSharpValue>
+                          </InArgument>
+                        </uix:TargetAnchorable.ScopeSelectorArgument>
+                      </uix:TargetAnchorable>
                     </uix:NClick.Target>
                   </uix:NClick>
                   <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="416,127" sap2010:WorkflowViewState.IdRef="Delay_1" />

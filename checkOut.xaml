@@ -125,9 +125,10 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="checkOut" sap:VirtualizedContainerService.HintSize="921,4940" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="checkOut" sap:VirtualizedContainerService.HintSize="830,4940" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
     </Sequence.Variables>
@@ -182,7 +183,7 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="488,118" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="CheckOut test">
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="488,118" sap2010:WorkflowViewState.IdRef="StartTest_2" Priority="Low" TestName="CheckOut test">
       <ra:StartTest.ReportId>
         <InArgument x:TypeArguments="x:Int32">
           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">reportIdLocal</CSharpValue>
@@ -213,17 +214,28 @@
             </sap:WorkflowViewStateService.ViewState>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Proceed To Checkout'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/view_cart" CVScreenId="d077e95c-2f9a-48be-9c65-b618f97403a8" CvElementArea="1389, 397, 208, 41" CvTextArea="1407, 406, 172, 18" CvTextArgument="Proceed To Checkout" CvType="Button" DesignTimeRectangle="1391, 398, 204, 37" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='do_action' tag='A' aaname='Proceed To Checkout' /&gt;" Guid="16037999-5430-4141-987b-ff3823ba7048" InformativeScreenshot="1547286eb044fc766072edaf8fbd9cee.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Checkout' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/view_cart" CVScreenId="d077e95c-2f9a-48be-9c65-b618f97403a8" CvElementArea="1389, 397, 208, 41" CvTextArea="1407, 406, 172, 18" CvTextArgument="Proceed To Checkout" CvType="Button" DesignTimeRectangle="1391, 398, 204, 37" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='do_action' tag='A' aaname='Proceed To Checkout' /&gt;" Guid="16037999-5430-4141-987b-ff3823ba7048" InformativeScreenshot="1547286eb044fc766072edaf8fbd9cee.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">"&lt;html app='"+Browser+"' title='Automation Exercise - Checkout' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'If you would like to ad…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/checkout" CVScreenId="e524bc69-011e-40b1-b5be-108329efd28d" CvElementArea="247, 380, 1423, 170" CvType="InputBox" DesignTimeRectangle="247, 382, 1425, 167" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='form-control' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b1c558bc-d7e0-41a9-9a5c-6f449826804c" InformativeScreenshot="fc867d7deef40f3494676fb136f2c2bf.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Checkout' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/checkout" CVScreenId="e524bc69-011e-40b1-b5be-108329efd28d" CvElementArea="247, 380, 1423, 170" CvType="InputBox" DesignTimeRectangle="247, 382, 1425, 167" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='form-control' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b1c558bc-d7e0-41a9-9a5c-6f449826804c" InformativeScreenshot="fc867d7deef40f3494676fb136f2c2bf.jpg" IsResponsive="True" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="e524bc69-011e-40b1-b5be-108329efd28d" CvTextArea="246, 354, 711, 17" CvTextArgument="If you would like to add a comment about your order, please write it in the field below." CvType="Text" DesignTimeRectangle="247, 351, 711, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='If you would like to add a comment about your order, please write it in the field below.' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='If you would like to add a comment about your order, please write it in the field below.' /&gt;" Guid="56bf18a6-209c-4dbe-9140-f68f58c97a52" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">"&lt;html app='"+Browser+"' title='Automation Exercise - Checkout' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
               <uix:NTypeInto.Text>
@@ -244,17 +256,28 @@
             </uix:NTypeInto>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Place Order'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/checkout" CVScreenId="542f251b-1c90-4183-a7da-825c6b4a3df2" CvElementArea="1458, 559, 133, 42" CvTextArea="1476, 570, 98, 18" CvTextArgument="Place Order" CvType="Button" DesignTimeRectangle="1460, 561, 130, 38" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Place Order' parentid='cart_items' tag='A' /&gt;" Guid="0e965259-4068-4a21-9a32-e2c5eca78849" InformativeScreenshot="594275ad5a41c1b29643b50c1a33bb99.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Checkout' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/checkout" CVScreenId="542f251b-1c90-4183-a7da-825c6b4a3df2" CvElementArea="1458, 559, 133, 42" CvTextArea="1476, 570, 98, 18" CvTextArgument="Place Order" CvType="Button" DesignTimeRectangle="1460, 561, 130, 38" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Place Order' parentid='cart_items' tag='A' /&gt;" Guid="0e965259-4068-4a21-9a32-e2c5eca78849" InformativeScreenshot="594275ad5a41c1b29643b50c1a33bb99.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">"&lt;html app='"+Browser+"' title='Automation Exercise - Checkout' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Name on Card'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="bfa4961b-9fbf-4a1d-a8c8-cdba482c14d1" CvElementArea="750, 911, 418, 46" CvType="InputBox" DesignTimeRectangle="753, 912, 413, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e2c623f2-c3be-4d45-b53a-5c730774825d" InformativeScreenshot="355098ef9932073ba2994bf716bb848d.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Payment' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="bfa4961b-9fbf-4a1d-a8c8-cdba482c14d1" CvElementArea="750, 911, 418, 46" CvType="InputBox" DesignTimeRectangle="753, 912, 413, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e2c623f2-c3be-4d45-b53a-5c730774825d" InformativeScreenshot="355098ef9932073ba2994bf716bb848d.jpg" IsResponsive="True" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="bfa4961b-9fbf-4a1d-a8c8-cdba482c14d1" CvTextArea="751, 884, 121, 17" CvTextArgument="Name on Card" CvType="Text" DesignTimeRectangle="753, 880, 119, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='control-label' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Name on Card' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Name on Card' /&gt;" Guid="8015607f-daf4-4929-b142-223d89d08d81" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">"&lt;html app='"+Browser+"' title='Automation Exercise - Checkout' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
               <uix:NTypeInto.Text>
@@ -275,12 +298,17 @@
             </uix:NTypeInto>
             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Card Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="69e3b596-3131-4106-bfd0-f9499af0ead4" CvElementArea="749, 616, 419, 46" CvType="InputBox" DesignTimeRectangle="753, 618, 413, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='card_number' tag='INPUT' type='text' class='form-control card-number' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0509b915-afbd-4d16-b1ea-f90e73e32abd" InformativeScreenshot="f44c60631d6bd88fd33c701242fc7ee6.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Payment' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="69e3b596-3131-4106-bfd0-f9499af0ead4" CvElementArea="749, 616, 419, 46" CvType="InputBox" DesignTimeRectangle="753, 618, 413, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='card_number' tag='INPUT' type='text' class='form-control card-number' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0509b915-afbd-4d16-b1ea-f90e73e32abd" InformativeScreenshot="f44c60631d6bd88fd33c701242fc7ee6.jpg" IsResponsive="True" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="69e3b596-3131-4106-bfd0-f9499af0ead4" CvTextArea="751, 590, 115, 17" CvTextArgument="Card Number" CvType="Text" DesignTimeRectangle="753, 587, 111, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Card Number' tag='LABEL' type='' class='control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Card Number' /&gt;" Guid="3dc63731-4414-42d9-add6-2e6dee1d3047" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">"&lt;html app='"+Browser+"' title='Automation Exercise - Checkout' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
               <uix:NTypeInto.Text>
@@ -301,12 +329,17 @@
             </uix:NTypeInto>
             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'CVC'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="a0af2e8d-4dc9-44fa-86cd-561d5ab4e6dd" CvElementArea="750, 709, 118, 46" CvType="InputBox" DesignTimeRectangle="753, 711, 113, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='cvc' tag='INPUT' type='text' class='form-control card-cvc' placeholder='ex. 311' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6f292407-74a2-4574-a5a3-eb0141ea721e" InformativeScreenshot="25077bfa3386f4208c318d1ab7dd7061.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Payment' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="a0af2e8d-4dc9-44fa-86cd-561d5ab4e6dd" CvElementArea="750, 709, 118, 46" CvType="InputBox" DesignTimeRectangle="753, 711, 113, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='cvc' tag='INPUT' type='text' class='form-control card-cvc' placeholder='ex. 311' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6f292407-74a2-4574-a5a3-eb0141ea721e" InformativeScreenshot="25077bfa3386f4208c318d1ab7dd7061.jpg" IsResponsive="True" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="a0af2e8d-4dc9-44fa-86cd-561d5ab4e6dd" CvTextArea="751, 682, 40, 17" CvTextArgument="CvC" CvType="Text" DesignTimeRectangle="753, 680, 37, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='CVC' tag='LABEL' type='' class='control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='CVC' /&gt;" Guid="a88b8df7-a2bf-4b52-b010-4ae30b6ca874" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">"&lt;html app='"+Browser+"' title='Automation Exercise - Checkout' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
               <uix:NTypeInto.Text>
@@ -327,12 +360,17 @@
             </uix:NTypeInto>
             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Expiration'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="defa6ba0-15f1-4f35-8ff5-07c4f4166411" CvElementArea="900, 709, 118, 46" CvType="InputBox" DesignTimeRectangle="903, 711, 113, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='expiry_month' tag='INPUT' type='text' class='form-control card-expiry-month' placeholder='MM' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6124266e-7c5d-47df-95ec-962d6c5deb8e" InformativeScreenshot="e534361a4cb0ffd281405f2100f934b9.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Payment' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="defa6ba0-15f1-4f35-8ff5-07c4f4166411" CvElementArea="900, 709, 118, 46" CvType="InputBox" DesignTimeRectangle="903, 711, 113, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='expiry_month' tag='INPUT' type='text' class='form-control card-expiry-month' placeholder='MM' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6124266e-7c5d-47df-95ec-962d6c5deb8e" InformativeScreenshot="e534361a4cb0ffd281405f2100f934b9.jpg" IsResponsive="True" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="defa6ba0-15f1-4f35-8ff5-07c4f4166411" CvTextArea="901, 682, 88, 21" CvTextArgument="Expiration" CvType="Text" DesignTimeRectangle="903, 680, 86, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Expiration' tag='LABEL' type='' class='control-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Expiration' /&gt;" Guid="198550b7-c4fb-4c3d-9d04-339d4441c050" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">"&lt;html app='"+Browser+"' title='Automation Exercise - Checkout' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
               <uix:NTypeInto.Text>
@@ -353,7 +391,13 @@
             </uix:NTypeInto>
             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="f56bd368-98a3-4642-a2e7-5c070bf4b1a2" CvElementArea="1051, 709, 117, 46" CvType="InputBox" DesignTimeRectangle="1053, 711, 113, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='expiry_year' tag='INPUT' type='text' /&gt;" Guid="e76c547a-5752-4319-aca2-2550c4d28c95" InformativeScreenshot="c086a9f01941820b176ac11bd75a1aa2.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Payment' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="f56bd368-98a3-4642-a2e7-5c070bf4b1a2" CvElementArea="1051, 709, 117, 46" CvType="InputBox" DesignTimeRectangle="1053, 711, 113, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='expiry_year' tag='INPUT' type='text' /&gt;" Guid="e76c547a-5752-4319-aca2-2550c4d28c95" InformativeScreenshot="c086a9f01941820b176ac11bd75a1aa2.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">"&lt;html app='"+Browser+"' title='Automation Exercise - Checkout' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
               <uix:NTypeInto.Text>
                 <InArgument x:TypeArguments="x:String">
@@ -373,7 +417,13 @@
             </uix:NTypeInto>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pay and Confirm Order'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="4625686f-d095-4744-b912-dbbba456af83" CvElementArea="750, 790, 419, 47" CvTextArea="866, 804, 185, 21" CvTextArgument="Pay and Confirm Order" CvType="Button" DesignTimeRectangle="753, 792, 413, 43" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='submit' tag='BUTTON' aaname='Pay and Confirm Order' /&gt;" Guid="6b1db561-2e46-453c-b1fb-1c896462ec05" InformativeScreenshot="710938786af95ef716db27f23a3e23e1.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Payment' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="4625686f-d095-4744-b912-dbbba456af83" CvElementArea="750, 790, 419, 47" CvTextArea="866, 804, 185, 21" CvTextArgument="Pay and Confirm Order" CvType="Button" DesignTimeRectangle="753, 792, 413, 43" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='submit' tag='BUTTON' aaname='Pay and Confirm Order' /&gt;" Guid="6b1db561-2e46-453c-b1fb-1c896462ec05" InformativeScreenshot="710938786af95ef716db27f23a3e23e1.jpg" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">"&lt;html app='"+Browser+"' title='Automation Exercise - Checkout' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
             <uix:NCheckState DisplayName="Check App State 'Congratulations! Your o…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1786" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">

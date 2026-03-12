@@ -124,14 +124,10 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Subscription" sap:VirtualizedContainerService.HintSize="921,4152" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Subscription" sap:VirtualizedContainerService.HintSize="830,4204" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
-      <Variable x:TypeArguments="x:String" Name="verifyText">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">subscription</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="subscription" Name="verifyText" />
       <Variable x:TypeArguments="x:String" Name="getSubsText" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -202,7 +198,7 @@
         </OutArgument>
       </ra:StartTest.testId>
     </ra:StartTest>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Automation Exercise" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,3402" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="0880e0cf-06f0-4869-b30f-855c474a4c69" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,3454" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="0880e0cf-06f0-4869-b30f-855c474a4c69" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -378,6 +374,9 @@
           <uix:TargetApp.Arguments>
             <InArgument x:TypeArguments="x:String" />
           </uix:TargetApp.Arguments>
+          <uix:TargetApp.FilePath>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.FilePath>
           <uix:TargetApp.Selector>
             <InArgument x:TypeArguments="x:String">
               <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">"&lt;html app='"+Browser+"' title='Automation Exercise' /&gt;"</CSharpValue>

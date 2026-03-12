@@ -119,23 +119,16 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="VerifyScrollUpButton" sap:VirtualizedContainerService.HintSize="921,5138" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="VerifyScrollUpButton" sap:VirtualizedContainerService.HintSize="750,5190" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
-      <Variable x:TypeArguments="x:String" Name="actualBottomText">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">subscription</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="subscription" Name="actualBottomText" />
       <Variable x:TypeArguments="x:String" Name="getBottomText" />
       <Variable x:TypeArguments="x:String" Name="getTopText" />
-      <Variable x:TypeArguments="x:String" Name="actualTopText">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">automationExercise</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="automationExercise" Name="actualTopText" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -216,7 +209,7 @@
         </OutArgument>
       </ra:StartTest.testId>
     </ra:StartTest>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Automation Exercise" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="556,4226" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="8dadc463-3113-44cc-9827-bc4a3d9575b5" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="556,4278" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="8dadc463-3113-44cc-9827-bc4a3d9575b5" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -232,7 +225,12 @@
             <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,230" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="80" ScopeIdentifier="8dadc463-3113-44cc-9827-bc4a3d9575b5" Version="V5" />
             <uix:NGetText DisplayName="Get Text 'Subscription'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,147" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="8dadc463-3113-44cc-9827-bc4a3d9575b5" Version="V5">
               <uix:NGetText.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="6595f25b-1b5b-4b6f-a7e6-318c2677d40e" DesignTimeRectangle="328, 602, 263, 17" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='footer' tag='H2' visibleinnertext='SUBSCRIPTION' /&gt;" Guid="633fe777-e97a-4050-a1aa-ec828b8b8660" InformativeScreenshot="d0bb7e8f177c8babb73b6a9fc56d56c2.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise' /&gt;" SearchSteps="Selector" Version="V6">
+                <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="6595f25b-1b5b-4b6f-a7e6-318c2677d40e" DesignTimeRectangle="328, 602, 263, 17" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='footer' tag='H2' visibleinnertext='SUBSCRIPTION' /&gt;" Guid="633fe777-e97a-4050-a1aa-ec828b8b8660" InformativeScreenshot="d0bb7e8f177c8babb73b6a9fc56d56c2.jpg" SearchSteps="Selector" Version="V6">
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">"&lt;html app='"+Browser+"' title='Automation Exercise' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
                   <uix:TargetAnchorable.WaitForReadyArgument>
                     <InArgument x:TypeArguments="uix:NWaitForReady">
                       <Literal x:TypeArguments="uix:NWaitForReady" sap2010:WorkflowViewState.IdRef="Literal`1_1" />
@@ -302,12 +300,24 @@
                   </ar:passedStep>
                   <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'A scrollUp'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8dadc463-3113-44cc-9827-bc4a3d9575b5" Version="V5">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="158ffc22-5ee3-44f7-9db9-a281d64625fe" DesignTimeRectangle="1544, 816, 39, 40" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='scrollUp' tag='A' /&gt;" Guid="12a013fc-e978-4d14-96a9-76bfb2586ec4" InformativeScreenshot="cfca4cbe070e9d9d3ec6f0af05eac253.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                      <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="158ffc22-5ee3-44f7-9db9-a281d64625fe" DesignTimeRectangle="1544, 816, 39, 40" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='scrollUp' tag='A' /&gt;" Guid="12a013fc-e978-4d14-96a9-76bfb2586ec4" InformativeScreenshot="cfca4cbe070e9d9d3ec6f0af05eac253.jpg" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.ScopeSelectorArgument>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">"&lt;html app='"+Browser+"' title='Automation Exercise' /&gt;"</CSharpValue>
+                          </InArgument>
+                        </uix:TargetAnchorable.ScopeSelectorArgument>
+                      </uix:TargetAnchorable>
                     </uix:NClick.Target>
                   </uix:NClick>
                   <uix:NGetText DisplayName="Get Text 'AutomationExercise'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,147" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="8dadc463-3113-44cc-9827-bc4a3d9575b5" Version="V5">
                     <uix:NGetText.Target>
-                      <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="03983098-0f4a-4eb3-a601-6cbad16abfb8" DesignTimeRectangle="346, 343, 490, 53" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H1' innertext='AutomationExercise' /&gt;" Guid="245736f4-f848-46bc-bc37-20523ccef75a" InformativeScreenshot="e7af3cc80b35e96e2e6a3af5fc824f43.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                      <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="03983098-0f4a-4eb3-a601-6cbad16abfb8" DesignTimeRectangle="346, 343, 490, 53" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H1' innertext='AutomationExercise' /&gt;" Guid="245736f4-f848-46bc-bc37-20523ccef75a" InformativeScreenshot="e7af3cc80b35e96e2e6a3af5fc824f43.jpg" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.ScopeSelectorArgument>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">"&lt;html app='"+Browser+"' title='Automation Exercise' /&gt;"</CSharpValue>
+                          </InArgument>
+                        </uix:TargetAnchorable.ScopeSelectorArgument>
+                      </uix:TargetAnchorable>
                     </uix:NGetText.Target>
                     <uix:NGetText.TextString>
                       <OutArgument x:TypeArguments="x:String">
@@ -471,6 +481,9 @@
           <uix:TargetApp.Arguments>
             <InArgument x:TypeArguments="x:String" />
           </uix:TargetApp.Arguments>
+          <uix:TargetApp.FilePath>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.FilePath>
           <uix:TargetApp.Selector>
             <InArgument x:TypeArguments="x:String">
               <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">"&lt;html app='"+Browser+"' title='Automation Exercise' /&gt;"</CSharpValue>

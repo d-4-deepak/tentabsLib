@@ -1,5 +1,6 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Login" this:Login.Browser="chrome.exe" this:Login.name="kaamdev" this:Login.password="Kaamfdev@123" this:Login.email="kaamdev@gmail.com" this:Login.reportIdLocal="0" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ar="clr-namespace:atuipath_utilities.Report;assembly=atuipath_utilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
+    <x:Property Name="isLoginSuccessful" Type="OutArgument(x:Boolean)" />
     <x:Property Name="Browser" Type="InArgument(x:String)" />
     <x:Property Name="name" Type="InArgument(x:String)" />
     <x:Property Name="password" Type="InArgument(x:String)" />
@@ -134,7 +135,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="921,9458" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="921,9832" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
     </Sequence.Variables>
@@ -189,7 +190,7 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="596,118" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="Login test">
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="596,118" sap2010:WorkflowViewState.IdRef="StartTest_2" Priority="Low" TestName="Login test">
       <ra:StartTest.ReportId>
         <InArgument x:TypeArguments="x:Int32">
           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">reportIdLocal</CSharpValue>
@@ -206,21 +207,21 @@
         </OutArgument>
       </ra:StartTest.testId>
     </ra:StartTest>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="596,8708" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="519bd25a-965f-4535-bf47-dbbf5b8dbb1c" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="596,9082" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="519bd25a-965f-4535-bf47-dbbf5b8dbb1c" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594,8462" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594,8836" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'Home'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="560,8398" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="519bd25a-965f-4535-bf47-dbbf5b8dbb1c" Version="V5">
+            <uix:NCheckState DisplayName="Check App State 'Home'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="560,8772" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="519bd25a-965f-4535-bf47-dbbf5b8dbb1c" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="558,7431" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="558,7805" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -275,9 +276,9 @@
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <uix:NCheckState DisplayName="Check App State 'Login'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="524,6105" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="519bd25a-965f-4535-bf47-dbbf5b8dbb1c" Version="V5">
+                  <uix:NCheckState DisplayName="Check App State 'Login'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="524,6479" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="519bd25a-965f-4535-bf47-dbbf5b8dbb1c" Version="V5">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="522,5138" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="522,5512" sap2010:WorkflowViewState.IdRef="Sequence_5">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="getUserName" />
                         </Sequence.Variables>
@@ -383,9 +384,9 @@
                             </InArgument>
                           </ui:LogMessage.Message>
                         </ui:LogMessage>
-                        <uix:NCheckState DisplayName="Check App State 'Logout'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="488,2726" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="519bd25a-965f-4535-bf47-dbbf5b8dbb1c" Version="V5">
+                        <uix:NCheckState DisplayName="Check App State 'Logout'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="488,3100" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="519bd25a-965f-4535-bf47-dbbf5b8dbb1c" Version="V5">
                           <uix:NCheckState.IfExists>
-                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="486,1758" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="486,2124" sap2010:WorkflowViewState.IdRef="Sequence_11">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -401,21 +402,21 @@
                                   </OutArgument>
                                 </uix:NGetText.TextString>
                               </uix:NGetText>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
                                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">"get text username "+ getUserName</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <If sap:VirtualizedContainerService.HintSize="452,1376" sap2010:WorkflowViewState.IdRef="If_2">
+                              <If sap:VirtualizedContainerService.HintSize="452,1734" sap2010:WorkflowViewState.IdRef="If_2">
                                 <If.Condition>
                                   <InArgument x:TypeArguments="x:Boolean">
                                     <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">getUserName == name</CSharpValue>
                                   </InArgument>
                                 </If.Condition>
                                 <If.Then>
-                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,621" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,800" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -424,11 +425,23 @@
                                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info">
                                       <ui:LogMessage.Message>
                                         <InArgument x:TypeArguments="x:Object">
-                                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">"user Registered Successfully and naviagted to home page"</CSharpValue>
+                                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">"user logged in Successfully and naviagted to home page"</CSharpValue>
                                         </InArgument>
                                       </ui:LogMessage.Message>
                                     </ui:LogMessage>
-                                    <ar:passedStep sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="passedStep_5" str_in_stepDescription="Verify that the registered username is displayed on the home page after account creation" str_in_stepName="Verify User Logged In">
+                                    <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Boolean">
+                                          <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">isLoginSuccessful</CSharpReference>
+                                        </OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Boolean">
+                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">true</CSharpValue>
+                                        </InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <ar:passedStep sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="passedStep_5" str_in_stepDescription="Verify that the  username is displayed on the home page after LogIn" str_in_stepName="Verify User Logged In">
                                       <ar:passedStep.str_in_actualStep>
                                         <InArgument x:TypeArguments="x:String">
                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">"Username displayed on homepage: " + getUserName</CSharpValue>
@@ -453,7 +466,7 @@
                                   </Sequence>
                                 </If.Then>
                                 <If.Else>
-                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,621" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,800" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -466,7 +479,19 @@
                                         </InArgument>
                                       </ui:LogMessage.Message>
                                     </ui:LogMessage>
-                                    <ar:failedStep sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="failedStep_3" str_in_stepDescription="Verify that the registered username is displayed on the home page after account creation" str_in_stepName="Verify User Logged In">
+                                    <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Boolean">
+                                          <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">isLoginSuccessful</CSharpReference>
+                                        </OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Boolean">
+                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">false</CSharpValue>
+                                        </InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <ar:failedStep sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="failedStep_3" str_in_stepDescription="Verify that the  username is displayed on the home page after logIn" str_in_stepName="Verify User Logged In">
                                       <ar:failedStep.str_in_actualStep>
                                         <InArgument x:TypeArguments="x:String">
                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">"Username displayed: " + getUserName</CSharpValue>
@@ -494,7 +519,7 @@
                             </Sequence>
                           </uix:NCheckState.IfExists>
                           <uix:NCheckState.IfNotExists>
-                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="486,617" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="486,621" sap2010:WorkflowViewState.IdRef="Sequence_12">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>

@@ -65,6 +65,8 @@
       <x:String>System.Numerics</x:String>
       <x:String>System.Security</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -139,7 +141,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Register" sap:VirtualizedContainerService.HintSize="921,18809" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Register" sap:VirtualizedContainerService.HintSize="921,18971" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
     </Sequence.Variables>
@@ -148,7 +150,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="632,329" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="666,329" sap2010:WorkflowViewState.IdRef="CommentOut_8">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="Sequence_21">
           <sap:WorkflowViewStateService.ViewState>
@@ -171,7 +173,7 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="632,280" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="666,280" sap2010:WorkflowViewState.IdRef="CommentOut_9">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,169" sap2010:WorkflowViewState.IdRef="Sequence_22">
           <sap:WorkflowViewStateService.ViewState>
@@ -194,7 +196,7 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="632,118" sap2010:WorkflowViewState.IdRef="StartTest_4" Priority="Low" TestName="Registeration Test">
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="666,118" sap2010:WorkflowViewState.IdRef="StartTest_4" Priority="Low" TestName="Registeration Test">
       <ra:StartTest.ReportId>
         <InArgument x:TypeArguments="x:Int32">
           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_79">reportIdLocal</CSharpValue>
@@ -211,34 +213,34 @@
         </OutArgument>
       </ra:StartTest.testId>
     </ra:StartTest>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="632,18059" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="666,18221" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="630,17813" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="664,17975" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'Home'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="596,17749" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+            <uix:NCheckState DisplayName="Check App State 'Home'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="630,17911" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="594,16782" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="628,16944" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="560,179" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="594,179" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
                         <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">"Home Page appeared successfully"</CSharpValue>
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="560,387" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Home page displayed" str_in_expectedStep="Home page should be visible" str_in_stepDescription="Verify that the home page loads successfully" str_in_stepName="Verify Home Page Visible">
+                  <ar:passedStep sap:VirtualizedContainerService.HintSize="594,387" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Home page displayed" str_in_expectedStep="Home page should be visible" str_in_stepDescription="Verify that the home page loads successfully" str_in_stepName="Verify Home Page Visible">
                     <ar:passedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">reportIdLocal</CSharpValue>
@@ -250,12 +252,12 @@
                       </InArgument>
                     </ar:passedStep.str_in_testId>
                   </ar:passedStep>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Signup / Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="560,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Signup / Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="automationexercise.com/login" CVScreenId="736a5448-0fd9-4385-8bc0-58d52935fde9" DesignTimeRectangle="897, 115, 136, 30" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='LI' innertext=' Signup / Login' /&gt;" Guid="7f53542d-36cf-47de-a7ec-1d6234818c86" InformativeScreenshot="fb0fdbcc7677e59bee195614d13aef7d.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup / Login' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="560,319" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                  <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,319" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                     <uix:NMouseScroll.SearchedElement>
                       <uix:SearchedElement>
                         <uix:SearchedElement.InUiElement>
@@ -273,16 +275,16 @@
                       </uix:SearchedElement>
                     </uix:NMouseScroll.SearchedElement>
                   </uix:NMouseScroll>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="560,179" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="594,179" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
                         <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">"scrolled to sign up button"</CSharpValue>
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <uix:NCheckState DisplayName="Check App State 'Signup'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="560,15456" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                  <uix:NCheckState DisplayName="Check App State 'Signup'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="594,15618" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="558,14489" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="592,14651" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="variable1" />
                         </Sequence.Variables>
@@ -292,14 +294,14 @@
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,179" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="558,179" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
                           <ui:LogMessage.Message>
                             <InArgument x:TypeArguments="x:Object">
                               <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">"sign up page appears successfully"</CSharpValue>
                             </InArgument>
                           </ui:LogMessage.Message>
                         </ui:LogMessage>
-                        <ar:passedStep sap:VirtualizedContainerService.HintSize="524,387" sap2010:WorkflowViewState.IdRef="passedStep_2" str_in_actualStep="Signup page appeared successfully" str_in_expectedStep="Signup page should appear" str_in_stepDescription="Verify that the Signup page is displayed after clicking Signup/Login" str_in_stepName="Verify Signup Page Visible">
+                        <ar:passedStep sap:VirtualizedContainerService.HintSize="558,387" sap2010:WorkflowViewState.IdRef="passedStep_2" str_in_actualStep="Signup page appeared successfully" str_in_expectedStep="Signup page should appear" str_in_stepDescription="Verify that the Signup page is displayed after clicking Signup/Login" str_in_stepName="Verify Signup Page Visible">
                           <ar:passedStep.str_in_reportId>
                             <InArgument x:TypeArguments="x:Int32">
                               <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">reportIdLocal</CSharpValue>
@@ -311,7 +313,7 @@
                             </InArgument>
                           </ar:passedStep.str_in_testId>
                         </ar:passedStep>
-                        <uix:NTypeInto ActivateBefore="True" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="524,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                        <uix:NTypeInto ActivateBefore="True" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                           <uix:NTypeInto.ClickBeforeMode>
                             <InArgument x:TypeArguments="uix:NClickMode">
                               <CSharpValue x:TypeArguments="uix:NClickMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">UiPath.UIAutomationNext.Enums.NClickMode.Single</CSharpValue>
@@ -336,14 +338,14 @@
                             </uix:VerifyExecutionTypeIntoOptions>
                           </uix:NTypeInto.VerifyOptions>
                         </uix:NTypeInto>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,179" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="558,179" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info">
                           <ui:LogMessage.Message>
                             <InArgument x:TypeArguments="x:Object">
                               <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">"Entered Name"</CSharpValue>
                             </InArgument>
                           </ui:LogMessage.Message>
                         </ui:LogMessage>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="524,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="automationexercise.com/login" CVScreenId="11756794-b30a-4ad8-a927-782a541e45a1" CvElementArea="814, 638, 364, 43" CvType="InputBox" DesignTimeRectangle="816, 640, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' data-qa='signup-email' placeholder='Email Address' /&gt;" Guid="55814dd6-717f-4e12-a74d-da4afaf4089b" InformativeScreenshot="a918b0b7bd3836b8871a8d2c05d13a1a.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup / Login' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                           </uix:NTypeInto.Target>
@@ -363,41 +365,41 @@
                             </uix:VerifyExecutionTypeIntoOptions>
                           </uix:NTypeInto.VerifyOptions>
                         </uix:NTypeInto>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,179" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="558,179" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info">
                           <ui:LogMessage.Message>
                             <InArgument x:TypeArguments="x:Object">
                               <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">"Entered Email address"</CSharpValue>
                             </InArgument>
                           </ui:LogMessage.Message>
                         </ui:LogMessage>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Signup'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="524,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Signup'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="automationexercise.com/login" CVScreenId="6f72c7c0-8938-4281-af43-b0fcba1358c9" DesignTimeRectangle="816, 690, 93, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Signup' tag='BUTTON' data-qa='signup-button' innertext='Signup' /&gt;" Guid="8de6011c-482c-4026-8702-c6a4c379b427" InformativeScreenshot="a2dbe21327496d775cd23da7fcd07da2.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup / Login' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                           </uix:NClick.Target>
                         </uix:NClick>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,179" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="558,179" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info">
                           <ui:LogMessage.Message>
                             <InArgument x:TypeArguments="x:Object">
                               <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">"Clicked on Login button"</CSharpValue>
                             </InArgument>
                           </ui:LogMessage.Message>
                         </ui:LogMessage>
-                        <uix:NCheckState DisplayName="Check App State 'Enter Account Informati…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="524,12624" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                        <uix:NCheckState DisplayName="Check App State 'Enter Account Informati…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="558,12786" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                           <uix:NCheckState.IfExists>
-                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="522,11657" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="556,11819" sap2010:WorkflowViewState.IdRef="Sequence_8">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
                                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">"Enter Account Information appeared successful"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <ar:passedStep sap:VirtualizedContainerService.HintSize="488,387" sap2010:WorkflowViewState.IdRef="passedStep_3" str_in_actualStep="Enter Account Information page appeared successfully" str_in_expectedStep="Enter Account Information page should appear" str_in_stepDescription="Verify that the ENTER ACCOUNT INFORMATION page is displayed after clicking Signup" str_in_stepName="Verify Enter Account Information Page">
+                              <ar:passedStep sap:VirtualizedContainerService.HintSize="522,387" sap2010:WorkflowViewState.IdRef="passedStep_3" str_in_actualStep="Enter Account Information page appeared successfully" str_in_expectedStep="Enter Account Information page should appear" str_in_stepDescription="Verify that the ENTER ACCOUNT INFORMATION page is displayed after clicking Signup" str_in_stepName="Verify Enter Account Information Page">
                                 <ar:passedStep.str_in_reportId>
                                   <InArgument x:TypeArguments="x:Int32">
                                     <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">reportIdLocal</CSharpValue>
@@ -409,7 +411,7 @@
                                   </InArgument>
                                 </ar:passedStep.str_in_testId>
                               </ar:passedStep>
-                              <If sap:VirtualizedContainerService.HintSize="488,1007" sap2010:WorkflowViewState.IdRef="If_1">
+                              <If sap:VirtualizedContainerService.HintSize="522,1007" sap2010:WorkflowViewState.IdRef="If_1">
                                 <If.Condition>
                                   <InArgument x:TypeArguments="x:Boolean">
                                     <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">mrOrMrs == "mr"</CSharpValue>
@@ -458,7 +460,7 @@
                                   </Sequence>
                                 </If.Else>
                               </If>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Password *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Password *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="81997d8d-5beb-4392-b40c-a4988ce1624a" CvElementArea="326, 423, 362, 42" CvType="InputBox" DesignTimeRectangle="328, 425, 360, 40" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control' aaname='Password *' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="36ec603d-6f6d-493a-8d0a-f9259d0e5974" InformativeScreenshot="f436df811f3d3224053a5774f703c21a.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                     <uix:TargetAnchorable.Anchors>
@@ -484,14 +486,14 @@
                                   </uix:VerifyExecutionTypeIntoOptions>
                                 </uix:NTypeInto.VerifyOptions>
                               </uix:NTypeInto>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
                                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">"Entered password"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <uix:NSelectItem DisplayName="Select Item 'Date of Birth'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,199" sap2010:WorkflowViewState.IdRef="NSelectItem_1" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NSelectItem DisplayName="Select Item 'Date of Birth'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,199" sap2010:WorkflowViewState.IdRef="NSelectItem_1" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NSelectItem.Item>
                                   <InArgument x:TypeArguments="x:String">
                                     <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">date</CSharpValue>
@@ -543,14 +545,14 @@
                                   </uix:TargetAnchorable>
                                 </uix:NSelectItem.Target>
                               </uix:NSelectItem>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
                                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">"selected date"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <uix:NSelectItem DisplayName="Select Item 'Month'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,199" sap2010:WorkflowViewState.IdRef="NSelectItem_2" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NSelectItem DisplayName="Select Item 'Month'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,199" sap2010:WorkflowViewState.IdRef="NSelectItem_2" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NSelectItem.Item>
                                   <InArgument x:TypeArguments="x:String">
                                     <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">month</CSharpValue>
@@ -577,14 +579,14 @@
                                   <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="7ed5ebdf-b8da-40ec-9d87-8db0fdf62334" CvElementArea="456, 304, 93, 36" CvType="InputBox" DesignTimeRectangle="458, 305, 88, 34" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='months' tag='SELECT' /&gt;" Guid="58dd67ff-fd50-48eb-aaa1-412689f1ac0f" InformativeScreenshot="1c44279c4c12b6bc6a7329d753c7883b.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NSelectItem.Target>
                               </uix:NSelectItem>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
                                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">"selected month"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <uix:NSelectItem DisplayName="Select Item 'Year'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,199" sap2010:WorkflowViewState.IdRef="NSelectItem_3" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NSelectItem DisplayName="Select Item 'Year'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,199" sap2010:WorkflowViewState.IdRef="NSelectItem_3" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NSelectItem.Item>
                                   <InArgument x:TypeArguments="x:String">
                                     <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">year</CSharpValue>
@@ -648,14 +650,14 @@
                                   <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="27eedd9d-8373-4383-bf76-ecd1e8db6009" CvElementArea="586, 304, 86, 37" CvType="InputBox" DesignTimeRectangle="588, 305, 82, 34" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='years' tag='SELECT' /&gt;" Guid="b23ea5d1-ba65-4c13-ad9e-eaf4f647baaf" InformativeScreenshot="1f4dab898f3a092db77d4b9572d51e7b.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NSelectItem.Target>
                               </uix:NSelectItem>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
                                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_59">"selected date"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign up for our newslet…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,198" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign up for our newslet…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,198" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="54df9c49-0d0c-4eba-aaf5-5be795b15e59" CvElementArea="326, 156, 18, 18" CvType="CheckBox" DesignTimeRectangle="328, 158, 15, 15" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='newsletter' tag='INPUT' type='checkbox' class='' aaname='Sign up for our newsletter!' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="edc239fc-2601-40a3-b287-3d034cb1540b" InformativeScreenshot="3d124e9bd34fbe9a3e3ce19a418f7f1b.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                     <uix:TargetAnchorable.Anchors>
@@ -666,7 +668,7 @@
                                   </uix:TargetAnchorable>
                                 </uix:NClick.Target>
                               </uix:NClick>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Receive special offers …'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,198" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Receive special offers …'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,198" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="1017d475-a7ba-481b-a021-c1275a0a8aab" CvElementArea="326, 181, 18, 18" CvType="CheckBox" DesignTimeRectangle="328, 183, 15, 15" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='optin' tag='INPUT' type='checkbox' class='' aaname='Receive special offers from our partners!' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c80f35bb-457a-4003-89e2-955475ddba49" InformativeScreenshot="96865da980d9409851ff1d87af1d9caa.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                     <uix:TargetAnchorable.Anchors>
@@ -677,7 +679,7 @@
                                   </uix:TargetAnchorable>
                                 </uix:NClick.Target>
                               </uix:NClick>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT first_name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT first_name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="b16c54c4-6d4d-4b49-8c83-88aed455d4ac" DesignTimeRectangle="328, 306, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='first_name' matching:id='fuzzy' fuzzylevel:id='0.0' tag='INPUT' type='text' class='form-control' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='First name *' /&gt;" Guid="60674640-558b-4a13-897f-d79b886991fc" InformativeScreenshot="d9650767105daddddbbc247dd923f7b0.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None" />
                                 </uix:NTypeInto.Target>
@@ -697,14 +699,14 @@
                                   </uix:VerifyExecutionTypeIntoOptions>
                                 </uix:NTypeInto.VerifyOptions>
                               </uix:NTypeInto>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
                                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">"Entered firstName"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT last_name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,250" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT last_name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="ebd0f282-b3db-426d-b07d-ef5cfcfd596b" CvElementArea="326, 384, 363, 44" CvType="InputBox" DesignTimeRectangle="328, 386, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='last_name' tag='INPUT' type='text' class='form-control' aaname='Last name *' /&gt;" Guid="8729ffee-a2cd-487a-bb06-e775b2ca7aa2" InformativeScreenshot="40566a5a9016a98407f4e9b850d41989.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None" />
                                 </uix:NTypeInto.Target>
@@ -724,14 +726,14 @@
                                   </uix:VerifyExecutionTypeIntoOptions>
                                 </uix:NTypeInto.VerifyOptions>
                               </uix:NTypeInto>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
                                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">"Entered lastName"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT company'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,250" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT company'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="38a45ca0-931b-49ef-8b3f-90a9e28a1934" CvElementArea="326, 363, 363, 44" CvType="InputBox" DesignTimeRectangle="328, 366, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='company' matching:id='fuzzy' fuzzylevel:id='0.0' tag='INPUT' type='text' class='form-control' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Company' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="55b2a828-4599-417e-a403-630148f31e4a" InformativeScreenshot="8560da3a5f0efde7339272719df43a52.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None" />
                                 </uix:NTypeInto.Target>
@@ -751,14 +753,14 @@
                                   </uix:VerifyExecutionTypeIntoOptions>
                                 </uix:NTypeInto.VerifyOptions>
                               </uix:NTypeInto>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
                                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">"Entered company Name"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT address1'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,250" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT address1'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="38a45ca0-931b-49ef-8b3f-90a9e28a1934" CvElementArea="326, 474, 363, 44" CvType="InputBox" DesignTimeRectangle="328, 476, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='address1' tag='INPUT' type='text' class='form-control' aaname='Address * (Street address, P.O. Box, Company name, etc.)' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="fc440d89-98fe-4ab5-aaeb-eb41e2bb7113" InformativeScreenshot="79c9e271114286c95740fbb797899c15.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NTypeInto.Target>
@@ -778,14 +780,14 @@
                                   </uix:VerifyExecutionTypeIntoOptions>
                                 </uix:NTypeInto.VerifyOptions>
                               </uix:NTypeInto>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
                                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">"Entered address"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <uix:NSelectItem DisplayName="Select Item 'Country *'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,199" sap2010:WorkflowViewState.IdRef="NSelectItem_4" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NSelectItem DisplayName="Select Item 'Country *'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,199" sap2010:WorkflowViewState.IdRef="NSelectItem_4" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NSelectItem.Item>
                                   <InArgument x:TypeArguments="x:String">
                                     <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">country</CSharpValue>
@@ -812,14 +814,14 @@
                                   </uix:TargetAnchorable>
                                 </uix:NSelectItem.Target>
                               </uix:NSelectItem>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
                                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">"selected country"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT state'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,250" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT state'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="2f49a5b1-a450-4722-b426-e58f75189478" CvElementArea="326, 507, 363, 43" CvType="InputBox" DesignTimeRectangle="328, 510, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='state' tag='INPUT' type='text' class='form-control' aaname='State * ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="90fbcedb-a931-48bb-a035-9274eb736bf6" InformativeScreenshot="7428f549f117a8ccf8adaa12fa006211.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NTypeInto.Target>
@@ -839,14 +841,14 @@
                                   </uix:VerifyExecutionTypeIntoOptions>
                                 </uix:NTypeInto.VerifyOptions>
                               </uix:NTypeInto>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
                                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">"Entered state"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT city'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,250" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT city'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="b774b6db-f9c0-4f12-bbde-8eecd59e1b3e" CvElementArea="326, 587, 363, 43" CvType="InputBox" DesignTimeRectangle="328, 590, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='city' tag='INPUT' type='text' class='form-control' aaname='City * ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="c8450d35-659a-4add-ad74-818307c31609" InformativeScreenshot="d46fed081dd26d2f2abf5ac27c752dcf.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NTypeInto.Target>
@@ -866,14 +868,14 @@
                                   </uix:VerifyExecutionTypeIntoOptions>
                                 </uix:NTypeInto.VerifyOptions>
                               </uix:NTypeInto>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
                                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">"Entered city"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT zipcode'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,250" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT zipcode'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="6be28b2c-a2ad-4fcf-a5b3-774073011e10" CvElementArea="326, 468, 363, 43" CvType="InputBox" DesignTimeRectangle="328, 470, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='zipcode' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="638216d6-d8b9-4b95-af1f-c123a8dfa89e" InformativeScreenshot="0dc8cc9d1c9fed57ec3ff036d71eb6b5.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NTypeInto.Target>
@@ -893,14 +895,14 @@
                                   </uix:VerifyExecutionTypeIntoOptions>
                                 </uix:NTypeInto.VerifyOptions>
                               </uix:NTypeInto>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
                                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">"Entered zipcode"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT mobile_number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,250" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT mobile_number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="943bf1aa-ad8b-4660-bdcf-9acea8a41f42" CvElementArea="326, 548, 363, 43" CvType="InputBox" DesignTimeRectangle="328, 550, 360, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='mobile_number' tag='INPUT' type='text' class='form-control' aaname='Mobile Number * ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="cdd3b020-501f-4c1b-9ad7-f937bbca33e6" InformativeScreenshot="196713380ad92442a3d5f801afd6d5c9.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NTypeInto.Target>
@@ -920,28 +922,28 @@
                                   </uix:VerifyExecutionTypeIntoOptions>
                                 </uix:NTypeInto.VerifyOptions>
                               </uix:NTypeInto>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
                                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">"Entered mobile number"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create Account'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,198" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create Account'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,198" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="automationexercise.com/signup" CVScreenId="01c44136-a5c2-4132-83fa-5e1e84805a62" CvElementArea="326, 277, 150, 36" CvTextArea="351, 289, 99, 13" CvTextArgument="Create Account" CvType="Button" DesignTimeRectangle="328, 280, 146, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Create Account' /&gt;" Guid="d97da96e-0a01-4e47-bfd4-e96ddee4b8bc" InformativeScreenshot="39ee6b3e716b8aad106483648f8ef3f4.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                                 </uix:NClick.Target>
                               </uix:NClick>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_32" Level="Info">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_32" Level="Info">
                                 <ui:LogMessage.Message>
                                   <InArgument x:TypeArguments="x:Object">
                                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_81">"Clicked on create account"</CSharpValue>
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <uix:NCheckState DisplayName="Check App State 'Account Created!'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="488,3874" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                              <uix:NCheckState DisplayName="Check App State 'Account Created!'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="522,4036" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NCheckState.IfExists>
-                                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="486,2907" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="520,3069" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:String" Name="getUserName" />
                                     </Sequence.Variables>
@@ -950,14 +952,14 @@
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Info">
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Info">
                                       <ui:LogMessage.Message>
                                         <InArgument x:TypeArguments="x:Object">
                                           <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">"Accounted created successfully"</CSharpValue>
                                         </InArgument>
                                       </ui:LogMessage.Message>
                                     </ui:LogMessage>
-                                    <ar:passedStep sap:VirtualizedContainerService.HintSize="452,387" sap2010:WorkflowViewState.IdRef="passedStep_4" str_in_actualStep="Account created message displayed" str_in_expectedStep="ACCOUNT CREATED message should be displayed" str_in_stepDescription="Verify that the ACCOUNT CREATED confirmation message is displayed after registration" str_in_stepName="Verify Account Created Message">
+                                    <ar:passedStep sap:VirtualizedContainerService.HintSize="486,387" sap2010:WorkflowViewState.IdRef="passedStep_4" str_in_actualStep="Account created message displayed" str_in_expectedStep="ACCOUNT CREATED message should be displayed" str_in_stepDescription="Verify that the ACCOUNT CREATED confirmation message is displayed after registration" str_in_stepName="Verify Account Created Message">
                                       <ar:passedStep.str_in_reportId>
                                         <InArgument x:TypeArguments="x:Int32">
                                           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">reportIdLocal</CSharpValue>
@@ -969,19 +971,19 @@
                                         </InArgument>
                                       </ar:passedStep.str_in_testId>
                                     </ar:passedStep>
-                                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="2" DisplayName="Click 'Continue'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="2" DisplayName="Click 'Continue'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,198" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable BrowserURL="automationexercise.com/account_created" CVScreenId="c745bb28-3a47-4f40-8600-61c7b417a086" CvElementArea="1094, 459, 84, 35" CvTextArea="1105, 469, 60, 15" CvTextArgument="Continue" CvType="Button" DesignTimeRectangle="1095, 461, 81, 32" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='form' tag='A' /&gt;" Guid="a3e0a30d-975a-442f-8f43-b28b6f181d4a" InformativeScreenshot="0bf9ffb39773eb8eee09f30f84f078e3.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Account Created' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                                       </uix:NClick.Target>
                                     </uix:NClick>
-                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="LogMessage_33" Level="Info">
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="LogMessage_33" Level="Info">
                                       <ui:LogMessage.Message>
                                         <InArgument x:TypeArguments="x:Object">
                                           <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_82">"Clicked on continue button"</CSharpValue>
                                         </InArgument>
                                       </ui:LogMessage.Message>
                                     </ui:LogMessage>
-                                    <uix:NGetText DisplayName="Get Text 'kaamDev'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,147" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                                    <uix:NGetText DisplayName="Get Text 'kaamDev'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,147" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                       <uix:NGetText.Target>
                                         <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="362aecef-885b-4ecd-b04b-388da0f46ff9" DesignTimeRectangle="1198, 149, 58, 17" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='B' aaname='*' innertext='*' parentclass='nav navbar-nav' /&gt;" Guid="d4c0e868-9a45-4037-8e70-96faded0fcbd" InformativeScreenshot="014e728bbd5d71576cd300884f09be46.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                                       </uix:NGetText.Target>
@@ -991,14 +993,14 @@
                                         </OutArgument>
                                       </uix:NGetText.TextString>
                                     </uix:NGetText>
-                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="LogMessage_34" Level="Info">
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="LogMessage_34" Level="Info">
                                       <ui:LogMessage.Message>
                                         <InArgument x:TypeArguments="x:Object">
                                           <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_84">"get text username "+ getUserName</CSharpValue>
                                         </InArgument>
                                       </ui:LogMessage.Message>
                                     </ui:LogMessage>
-                                    <If sap:VirtualizedContainerService.HintSize="452,1385" sap2010:WorkflowViewState.IdRef="If_2">
+                                    <If sap:VirtualizedContainerService.HintSize="486,1385" sap2010:WorkflowViewState.IdRef="If_2">
                                       <If.Condition>
                                         <InArgument x:TypeArguments="x:Boolean">
                                           <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">getUserName == name</CSharpValue>
@@ -1081,15 +1083,26 @@
                                         </Sequence>
                                       </If.Else>
                                     </If>
-                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Logout'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,189" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
-                                      <uix:NClick.Target>
-                                        <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="d32daba0-c1aa-471f-87af-16dacdb97f85" CvTextArea="927, 128, 45, 16" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="912, 125, 59, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Logout' tag='A' /&gt;" Guid="39884757-2759-4170-b393-2affcf8db80d" InformativeScreenshot="71fc6e9111533d250565eae5d03a53eb.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
-                                      </uix:NClick.Target>
-                                    </uix:NClick>
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,351" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Logout'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="d32daba0-c1aa-471f-87af-16dacdb97f85" CvTextArea="927, 128, 45, 16" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="912, 125, 59, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Logout' tag='A' /&gt;" Guid="39884757-2759-4170-b393-2affcf8db80d" InformativeScreenshot="71fc6e9111533d250565eae5d03a53eb.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
+                                    </ui:CommentOut>
                                   </Sequence>
                                 </uix:NCheckState.IfExists>
                                 <uix:NCheckState.IfNotExists>
-                                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="486,621" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="520,621" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1245,7 +1258,7 @@
       </uix:NApplicationCard.OCREngine>
       <uix:NApplicationCard.OpenMode>
         <InArgument x:TypeArguments="uix:NAppOpenMode">
-          <CSharpValue x:TypeArguments="uix:NAppOpenMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">UiPath.UIAutomationNext.Enums.NAppOpenMode.Always</CSharpValue>
+          <CSharpValue x:TypeArguments="uix:NAppOpenMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_85">UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen</CSharpValue>
         </InArgument>
       </uix:NApplicationCard.OpenMode>
       <uix:NApplicationCard.TargetApp>

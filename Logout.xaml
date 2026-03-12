@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Logout" this:Logout.Browser="chrome.exe" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ar="clr-namespace:atuipath_utilities.Report;assembly=atuipath_utilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Logout" this:Logout.Browser="chrome.exe" this:Logout.reportIdLocal="0" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ar="clr-namespace:atuipath_utilities.Report;assembly=atuipath_utilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="Browser" Type="InArgument(x:String)" />
     <x:Property Name="suiteIdLocal" Type="InArgument(x:String)" />
@@ -118,9 +118,10 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Logout" sap:VirtualizedContainerService.HintSize="877.2,3662.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Logout" sap:VirtualizedContainerService.HintSize="921,3744" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
     </Sequence.Variables>
@@ -129,15 +130,15 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="521.6,328" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="524,329" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,217.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="Sequence_7">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ra:CreateReport ContinueOnError="{x:Null}" DisplayName="Create Report" sap:VirtualizedContainerService.HintSize="416,157.6" sap2010:WorkflowViewState.IdRef="CreateReport_1" ReportName="logout report">
+          <ra:CreateReport ContinueOnError="{x:Null}" DisplayName="Create Report" sap:VirtualizedContainerService.HintSize="416,158" sap2010:WorkflowViewState.IdRef="CreateReport_1" ReportName="logout report">
             <ra:CreateReport.ReportLocation>
               <InArgument x:TypeArguments="x:String">
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\Downloads\\Reports"</CSharpValue>
@@ -152,15 +153,15 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="521.6,279.2" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="524,280" sap2010:WorkflowViewState.IdRef="CommentOut_2">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,168.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,169" sap2010:WorkflowViewState.IdRef="Sequence_8">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ra:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="416,108.8" sap2010:WorkflowViewState.IdRef="StartSuite_1" SuiteName="logout">
+          <ra:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="416,109" sap2010:WorkflowViewState.IdRef="StartSuite_1" SuiteName="logout">
             <ra:StartSuite.ReportId>
               <InArgument x:TypeArguments="x:Int32">
                 <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">reportIdLocal</CSharpValue>
@@ -175,7 +176,7 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="521.6,117.6" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="logout test">
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="524,118" sap2010:WorkflowViewState.IdRef="StartTest_2" Priority="Low" TestName="logout test">
       <ra:StartTest.ReportId>
         <InArgument x:TypeArguments="x:Int32">
           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">reportIdLocal</CSharpValue>
@@ -192,54 +193,61 @@
         </OutArgument>
       </ra:StartTest.testId>
     </ra:StartTest>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="521.6,2914.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="9778b0b4-0498-4aa4-bbc2-90fcef8111b2" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Automation Exercise" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,2994" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="9778b0b4-0498-4aa4-bbc2-90fcef8111b2" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,2668.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,2800" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'Logout'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486.4,2604.8" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="9778b0b4-0498-4aa4-bbc2-90fcef8111b2" Version="V5">
+            <uix:NCheckState DisplayName="Check App State 'Logout'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="488,2736" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="9778b0b4-0498-4aa4-bbc2-90fcef8111b2" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="484.8,2025.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="486,2156" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Logout'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9778b0b4-0498-4aa4-bbc2-90fcef8111b2" Version="V5">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Logout'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9778b0b4-0498-4aa4-bbc2-90fcef8111b2" Version="V5">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="ee740268-f679-4130-bdd1-8dacabaee11c" DesignTimeRectangle="1099, 155, 74, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Logout' tag='A' /&gt;" Guid="195ccd1c-ed2c-44a7-a67b-19d20f50cc86" InformativeScreenshot="7cf7a9c45eff2418b9f9b4c2e2b72ece.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="ee740268-f679-4130-bdd1-8dacabaee11c" DesignTimeRectangle="1099, 155, 74, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Logout' tag='A' /&gt;" Guid="195ccd1c-ed2c-44a7-a67b-19d20f50cc86" InformativeScreenshot="7cf7a9c45eff2418b9f9b4c2e2b72ece.jpg" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.ScopeSelectorArgument>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">"&lt;html app='"+Browser+"' title='Automation Exercise' /&gt;"</CSharpValue>
+                          </InArgument>
+                        </uix:TargetAnchorable.ScopeSelectorArgument>
+                      </uix:TargetAnchorable>
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
                         <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">"clicked on logout button"</CSharpValue>
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <uix:NCheckState DisplayName="Check App State 'Signup / Login'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,1585.6" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="9778b0b4-0498-4aa4-bbc2-90fcef8111b2" Version="V5">
+                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="452,127" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <uix:NCheckState DisplayName="Check App State 'Signup / Login'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1588" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="9778b0b4-0498-4aa4-bbc2-90fcef8111b2" Version="V5">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,620" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,621" sap2010:WorkflowViewState.IdRef="Sequence_5">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
                           <ui:LogMessage.Message>
                             <InArgument x:TypeArguments="x:Object">
                               <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">"logged out successfully"</CSharpValue>
                             </InArgument>
                           </ui:LogMessage.Message>
                         </ui:LogMessage>
-                        <ar:passedStep sap:VirtualizedContainerService.HintSize="416,377.6" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="User logged out successfully and login/signup page  appeared" str_in_expectedStep="User should be logged out and login/signup page should appear" str_in_stepDescription="Verify that the user is successfully logged out and redirected to the login page" str_in_stepName="Verify User Logged Out">
+                        <ar:passedStep sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="User logged out successfully and login/signup page  appeared" str_in_expectedStep="User should be logged out and login/signup page should appear" str_in_stepDescription="Verify that the user is successfully logged out and redirected to the login page" str_in_stepName="Verify User Logged Out">
                           <ar:passedStep.str_in_reportId>
                             <InArgument x:TypeArguments="x:Int32">
                               <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">reportIdLocal</CSharpValue>
@@ -254,20 +262,20 @@
                       </Sequence>
                     </uix:NCheckState.IfExists>
                     <uix:NCheckState.IfNotExists>
-                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,620" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,621" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error">
                           <ui:LogMessage.Message>
                             <InArgument x:TypeArguments="x:Object">
                               <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">"log out failed"</CSharpValue>
                             </InArgument>
                           </ui:LogMessage.Message>
                         </ui:LogMessage>
-                        <ar:failedStep sap:VirtualizedContainerService.HintSize="416,377.6" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="User still appears logged in" str_in_expectedStep="User should be logged out and login page should appear" str_in_stepDescription="Verify that the user is successfully logged out and redirected to the login page" str_in_stepName="Verify User Logged Out">
+                        <ar:failedStep sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="User still appears logged in" str_in_expectedStep="User should be logged out and login page should appear" str_in_stepDescription="Verify that the user is successfully logged out and redirected to the login page" str_in_stepName="Verify User Logged Out">
                           <ar:failedStep.str_in_reportId>
                             <InArgument x:TypeArguments="x:Int32">
                               <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">reportIdLocal</CSharpValue>
@@ -282,19 +290,25 @@
                       </Sequence>
                     </uix:NCheckState.IfNotExists>
                     <uix:NCheckState.Target>
-                      <uix:TargetAnchorable BrowserURL="automationexercise.com/login" CVScreenId="6d170a7f-d1e1-4c52-b977-f340d5ff2fe2" DesignTimeRectangle="1099, 155, 132, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Signup / Login' tag='A' /&gt;" Guid="b4cdac12-1ffb-41b9-8aad-0c8cc9c4eb10" InformativeScreenshot="a2f4d85d42441b2e19d9bae7c83c43a3.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup / Login' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="automationexercise.com/login" CVScreenId="6d170a7f-d1e1-4c52-b977-f340d5ff2fe2" DesignTimeRectangle="1099, 155, 132, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Signup / Login' tag='A' /&gt;" Guid="b4cdac12-1ffb-41b9-8aad-0c8cc9c4eb10" InformativeScreenshot="a2f4d85d42441b2e19d9bae7c83c43a3.jpg" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.ScopeSelectorArgument>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup / Login' /&gt;"</CSharpValue>
+                          </InArgument>
+                        </uix:TargetAnchorable.ScopeSelectorArgument>
+                      </uix:TargetAnchorable>
                     </uix:NCheckState.Target>
                   </uix:NCheckState>
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="484.8,233.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="486,234" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
                         <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">"user is already logged out"</CSharpValue>
@@ -304,12 +318,23 @@
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="74c64777-83b6-44ed-890a-166047e6d6ea" DesignTimeRectangle="1099, 155, 74, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Logout' tag='A' /&gt;" Guid="eebdaaf2-6205-41d4-9b8d-81b52d64150c" InformativeScreenshot="29185da8e2af76833750f9369e85bc53.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                <uix:TargetAnchorable BrowserURL="automationexercise.com" CVScreenId="74c64777-83b6-44ed-890a-166047e6d6ea" DesignTimeRectangle="1099, 155, 74, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Logout' tag='A' /&gt;" Guid="eebdaaf2-6205-41d4-9b8d-81b52d64150c" InformativeScreenshot="29185da8e2af76833750f9369e85bc53.jpg" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">"&lt;html app='"+Browser+"' title='Automation Exercise' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
               </uix:NCheckState.Target>
             </uix:NCheckState>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.CloseMode>
+        <InArgument x:TypeArguments="uix:NAppCloseMode">
+          <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">UiPath.UIAutomationNext.Enums.NAppCloseMode.Never</CSharpValue>
+        </InArgument>
+      </uix:NApplicationCard.CloseMode>
       <uix:NApplicationCard.OCREngine>
         <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
           <ActivityFunc.Argument>
@@ -318,16 +343,13 @@
         </ActivityFunc>
       </uix:NApplicationCard.OCREngine>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAE4AAABTCAIAAAC+gKYPAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAA89JREFUeF7tmsuVqzAMhqeF1EQ9dEML6YANezpgy4YSKCDkHr/AlmSwMWCFy3+0GQJn+LCsF/x9/xv9wQP31YN6Rz2od9SDekc9qHfUg7pH/XdopqGZRvgDEx2EOjZT/fq8pdUV/JWHjkAdSg15d9RmsjmFlRM8h4WSUbvC5Xx93gXP7ZqGOlaIU9g0wBM5KAl1aiGkNpbbNQFVu27xmWPvYhy3615U7bpyW4IIPB9npn2ovc6iXS/+InbsbVDVMi4b0pBbxjAyxaOaNXRgOuTDasE5KRpVRV24aAPy4bZxz8ivSFQdgagAO7puvII6lPDIJYpBncMPjQEqxFJ0OUMjO4HiUztFFbz0EoWjmkXzlge4GPYavPQSBaOagmEli3iLJ2TwyksUiNprDNp1Zb/a4rofm/TkuoCXX6IwVNO+WIFXzhy6cmpRmgHWVtPIIvFsoy7LVVffsafKQOnYbTmN0IdhTsqqVdSxhynEYhPLNYgT7Ct+DtUaFBFW+Csh+FyYo8LbdawuxEp6ha71PpQMgqiehFF82nIVUumHUMmQ0/pqBkLwSfFFHSuV95ao60uktNCqxl1+rqADK5nFWauNSMFV9VaRGUShLvNOqoNZFUSNf1jnyUGV67DcaHyqQA78fk1stitCXUxUP5EiUPn4sA91PX/69Iuou70Ov9c4CXXsZesfcZ8UasrNocy8tuFlje3YUBm/kP2DqLHhRULLf4kIexh1n+sa2aj1WgBHsdpval6jrXQa45i87aCKB7nbdbXmsUvhXU+08jst0vuovJoqsYtoxzuQMz7nn4G6qhlVOaRpeol5jeO39vGQxoPQ5ag6GsFjKHSjRZPDHe+mCFAOVFIANXIfhogN6vnfjnBFjckigWKD6r6kTdmTPrFBdVaVqoGGSoQlMVWGvwSKCSruE6g0ow0F5zCxRfXabt9mgRpRDyfUrSxQUVKVs1hRMMhPUdUu7fzFZph4oDrhd+dW3BQPVDv8npBRlXigJswow8UCdQlLJ9SDszigWh9RnOa9/FATcsmmGKBaMWl3eRAiBqhLTKJK3+OUH9UqlWJQ9TwVHl5RdlT7w66gTCOmUM6LpdDtnRvVrpNCwm/Ct8e5UWPrJDhtUwsLzyJ1Kaqo2mffw13bNio1Qw1z+6tR0V1SJj5PqExPY9oaukcXxnSv4htNssjhy8+hmla22/R2qGtR1au0QX5m6nFIbfo1h5ybLc6c1J1fiuoIxN7lLSs88ShlQnVGoaEhNFFZUJ1P3wOzYrpyo27n0sOUCVVEnbhUka4sqHn0oN5R/wBGC/C5PNYWiAAAAABJRU5ErkJggg==" InformativeScreenshot="8493877e3737f030f320f25b32e9170c.jpg" Url="https://automationexercise.com/" Version="V2">
+        <uix:TargetApp Area="-8, -8, 1616, 868" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAE4AAABTCAIAAAC+gKYPAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAA89JREFUeF7tmsuVqzAMhqeF1EQ9dEML6YANezpgy4YSKCDkHr/AlmSwMWCFy3+0GQJn+LCsF/x9/xv9wQP31YN6Rz2od9SDekc9qHfUg7pH/XdopqGZRvgDEx2EOjZT/fq8pdUV/JWHjkAdSg15d9RmsjmFlRM8h4WSUbvC5Xx93gXP7ZqGOlaIU9g0wBM5KAl1aiGkNpbbNQFVu27xmWPvYhy3615U7bpyW4IIPB9npn2ovc6iXS/+InbsbVDVMi4b0pBbxjAyxaOaNXRgOuTDasE5KRpVRV24aAPy4bZxz8ivSFQdgagAO7puvII6lPDIJYpBncMPjQEqxFJ0OUMjO4HiUztFFbz0EoWjmkXzlge4GPYavPQSBaOagmEli3iLJ2TwyksUiNprDNp1Zb/a4rofm/TkuoCXX6IwVNO+WIFXzhy6cmpRmgHWVtPIIvFsoy7LVVffsafKQOnYbTmN0IdhTsqqVdSxhynEYhPLNYgT7Ct+DtUaFBFW+Csh+FyYo8LbdawuxEp6ha71PpQMgqiehFF82nIVUumHUMmQ0/pqBkLwSfFFHSuV95ao60uktNCqxl1+rqADK5nFWauNSMFV9VaRGUShLvNOqoNZFUSNf1jnyUGV67DcaHyqQA78fk1stitCXUxUP5EiUPn4sA91PX/69Iuou70Ov9c4CXXsZesfcZ8UasrNocy8tuFlje3YUBm/kP2DqLHhRULLf4kIexh1n+sa2aj1WgBHsdpval6jrXQa45i87aCKB7nbdbXmsUvhXU+08jst0vuovJoqsYtoxzuQMz7nn4G6qhlVOaRpeol5jeO39vGQxoPQ5ag6GsFjKHSjRZPDHe+mCFAOVFIANXIfhogN6vnfjnBFjckigWKD6r6kTdmTPrFBdVaVqoGGSoQlMVWGvwSKCSruE6g0ow0F5zCxRfXabt9mgRpRDyfUrSxQUVKVs1hRMMhPUdUu7fzFZph4oDrhd+dW3BQPVDv8npBRlXigJswow8UCdQlLJ9SDszigWh9RnOa9/FATcsmmGKBaMWl3eRAiBqhLTKJK3+OUH9UqlWJQ9TwVHl5RdlT7w66gTCOmUM6LpdDtnRvVrpNCwm/Ct8e5UWPrJDhtUwsLzyJ1Kaqo2mffw13bNio1Qw1z+6tR0V1SJj5PqExPY9oaukcXxnSv4htNssjhy8+hmla22/R2qGtR1au0QX5m6nFIbfo1h5ybLc6c1J1fiuoIxN7lLSs88ShlQnVGoaEhNFFZUJ1P3wOzYrpyo27n0sOUCVVEnbhUka4sqHn0oN5R/wBGC/C5PNYWiAAAAABJRU5ErkJggg==" InformativeScreenshot="6c8eccb75f605ed2e89034f58f5b2a2a.jpg" Url="https://automationexercise.com/" Version="V2">
           <uix:TargetApp.Arguments>
             <InArgument x:TypeArguments="x:String" />
           </uix:TargetApp.Arguments>
-          <uix:TargetApp.FilePath>
-            <InArgument x:TypeArguments="x:String" />
-          </uix:TargetApp.FilePath>
           <uix:TargetApp.Selector>
             <InArgument x:TypeArguments="x:String">
-              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">"&lt;html app='"+ Browser +"' title='Automation Exercise' /&gt;"</CSharpValue>
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">"&lt;html app='"+Browser+"' title='Automation Exercise' /&gt;"</CSharpValue>
             </InArgument>
           </uix:TargetApp.Selector>
           <uix:TargetApp.WorkingDirectory>

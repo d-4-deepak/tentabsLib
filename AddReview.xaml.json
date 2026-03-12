@@ -1,28 +1,16 @@
 {
-  "DisplayName": "Login",
+  "DisplayName": "AddReview",
   "Tooltip": null,
   "HelpLink": null,
   "Color": null,
   "OriginalIconFileName": null,
   "Arguments": [
     {
-      "Name": "password",
-      "DisplayName": "password",
+      "Name": "reportIdLocal",
+      "DisplayName": "reportIdLocal",
       "Category": null,
       "Tooltip": null,
-      "Placeholder": "Kaamdev@123",
-      "Widget": null,
-      "IsRequired": false,
-      "IsPrincipal": true,
-      "ArgumentType": 0,
-      "DataSourceItems": null
-    },
-    {
-      "Name": "email",
-      "DisplayName": "email",
-      "Category": null,
-      "Tooltip": null,
-      "Placeholder": "kaamdev@gmail.com",
+      "Placeholder": null,
       "Widget": null,
       "IsRequired": false,
       "IsPrincipal": true,
@@ -42,30 +30,6 @@
       "DataSourceItems": null
     },
     {
-      "Name": "reportIdLocal",
-      "DisplayName": "reportIdLocal",
-      "Category": null,
-      "Tooltip": null,
-      "Placeholder": "0",
-      "Widget": null,
-      "IsRequired": false,
-      "IsPrincipal": true,
-      "ArgumentType": 0,
-      "DataSourceItems": null
-    },
-    {
-      "Name": "name",
-      "DisplayName": "name",
-      "Category": null,
-      "Tooltip": null,
-      "Placeholder": "kaamdev",
-      "Widget": null,
-      "IsRequired": false,
-      "IsPrincipal": true,
-      "ArgumentType": 0,
-      "DataSourceItems": null
-    },
-    {
       "Name": "Browser",
       "DisplayName": "Browser",
       "Category": null,
@@ -78,8 +42,32 @@
       "DataSourceItems": null
     },
     {
-      "Name": "isLoginSuccessful",
-      "DisplayName": "isLoginSuccessful",
+      "Name": "name",
+      "DisplayName": "name",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "email",
+      "DisplayName": "email",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "addComment",
+      "DisplayName": "addComment",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,

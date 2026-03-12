@@ -127,7 +127,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="checkOut" sap:VirtualizedContainerService.HintSize="877.2,4733.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="checkOut" sap:VirtualizedContainerService.HintSize="921,4940" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
     </Sequence.Variables>
@@ -136,15 +136,15 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.4,328" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="488,329" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,217.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ra:CreateReport ContinueOnError="{x:Null}" DisplayName="Create Report" sap:VirtualizedContainerService.HintSize="416,157.6" sap2010:WorkflowViewState.IdRef="CreateReport_1" ReportName="checkout">
+          <ra:CreateReport ContinueOnError="{x:Null}" DisplayName="Create Report" sap:VirtualizedContainerService.HintSize="416,158" sap2010:WorkflowViewState.IdRef="CreateReport_1" ReportName="checkout">
             <ra:CreateReport.ReportLocation>
               <InArgument x:TypeArguments="x:String">
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\Downloads\\Reports"</CSharpValue>
@@ -159,15 +159,15 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.4,279.2" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="488,280" sap2010:WorkflowViewState.IdRef="CommentOut_2">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,168.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,169" sap2010:WorkflowViewState.IdRef="Sequence_6">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ra:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="416,108.8" sap2010:WorkflowViewState.IdRef="StartSuite_1" SuiteName="start check suite">
+          <ra:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="416,109" sap2010:WorkflowViewState.IdRef="StartSuite_1" SuiteName="start check suite">
             <ra:StartSuite.ReportId>
               <InArgument x:TypeArguments="x:Int32">
                 <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">reportIdLocal</CSharpValue>
@@ -182,7 +182,7 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="486.4,117.6" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="CheckOut test">
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="488,118" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="CheckOut test">
       <ra:StartTest.ReportId>
         <InArgument x:TypeArguments="x:Int32">
           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">reportIdLocal</CSharpValue>
@@ -199,24 +199,24 @@
         </OutArgument>
       </ra:StartTest.testId>
     </ra:StartTest>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,3985.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,4190" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,3740" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,3944" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Proceed To Checkout'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Proceed To Checkout'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="automationexercise.com/view_cart" CVScreenId="d077e95c-2f9a-48be-9c65-b618f97403a8" CvElementArea="1389, 397, 208, 41" CvTextArea="1407, 406, 172, 18" CvTextArgument="Proceed To Checkout" CvType="Button" DesignTimeRectangle="1391, 398, 204, 37" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='do_action' tag='A' aaname='Proceed To Checkout' /&gt;" Guid="16037999-5430-4141-987b-ff3823ba7048" InformativeScreenshot="1547286eb044fc766072edaf8fbd9cee.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Checkout' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'If you would like to ad…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,249.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'If you would like to ad…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="automationexercise.com/checkout" CVScreenId="e524bc69-011e-40b1-b5be-108329efd28d" CvElementArea="247, 380, 1423, 170" CvType="InputBox" DesignTimeRectangle="247, 382, 1425, 167" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='form-control' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b1c558bc-d7e0-41a9-9a5c-6f449826804c" InformativeScreenshot="fc867d7deef40f3494676fb136f2c2bf.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Checkout' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -242,12 +242,12 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Place Order'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Place Order'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="automationexercise.com/checkout" CVScreenId="542f251b-1c90-4183-a7da-825c6b4a3df2" CvElementArea="1458, 559, 133, 42" CvTextArea="1476, 570, 98, 18" CvTextArgument="Place Order" CvType="Button" DesignTimeRectangle="1460, 561, 130, 38" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Place Order' parentid='cart_items' tag='A' /&gt;" Guid="0e965259-4068-4a21-9a32-e2c5eca78849" InformativeScreenshot="594275ad5a41c1b29643b50c1a33bb99.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Checkout' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Name on Card'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,249.6" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Name on Card'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="bfa4961b-9fbf-4a1d-a8c8-cdba482c14d1" CvElementArea="750, 911, 418, 46" CvType="InputBox" DesignTimeRectangle="753, 912, 413, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e2c623f2-c3be-4d45-b53a-5c730774825d" InformativeScreenshot="355098ef9932073ba2994bf716bb848d.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Payment' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -273,7 +273,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Card Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,249.6" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Card Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="69e3b596-3131-4106-bfd0-f9499af0ead4" CvElementArea="749, 616, 419, 46" CvType="InputBox" DesignTimeRectangle="753, 618, 413, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='card_number' tag='INPUT' type='text' class='form-control card-number' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0509b915-afbd-4d16-b1ea-f90e73e32abd" InformativeScreenshot="f44c60631d6bd88fd33c701242fc7ee6.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Payment' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -299,7 +299,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'CVC'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,249.6" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'CVC'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="a0af2e8d-4dc9-44fa-86cd-561d5ab4e6dd" CvElementArea="750, 709, 118, 46" CvType="InputBox" DesignTimeRectangle="753, 711, 113, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='cvc' tag='INPUT' type='text' class='form-control card-cvc' placeholder='ex. 311' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6f292407-74a2-4574-a5a3-eb0141ea721e" InformativeScreenshot="25077bfa3386f4208c318d1ab7dd7061.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Payment' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -325,7 +325,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Expiration'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,249.6" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Expiration'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="defa6ba0-15f1-4f35-8ff5-07c4f4166411" CvElementArea="900, 709, 118, 46" CvType="InputBox" DesignTimeRectangle="903, 711, 113, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='expiry_month' tag='INPUT' type='text' class='form-control card-expiry-month' placeholder='MM' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6124266e-7c5d-47df-95ec-962d6c5deb8e" InformativeScreenshot="e534361a4cb0ffd281405f2100f934b9.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Payment' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -351,7 +351,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,249.6" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="f56bd368-98a3-4642-a2e7-5c070bf4b1a2" CvElementArea="1051, 709, 117, 46" CvType="InputBox" DesignTimeRectangle="1053, 711, 113, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='expiry_year' tag='INPUT' type='text' /&gt;" Guid="e76c547a-5752-4319-aca2-2550c4d28c95" InformativeScreenshot="c086a9f01941820b176ac11bd75a1aa2.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Payment' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NTypeInto.Target>
@@ -371,27 +371,27 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pay and Confirm Order'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pay and Confirm Order'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="automationexercise.com/payment" CVScreenId="4625686f-d095-4744-b912-dbbba456af83" CvElementArea="750, 790, 419, 47" CvTextArea="866, 804, 185, 21" CvTextArgument="Pay and Confirm Order" CvType="Button" DesignTimeRectangle="753, 792, 413, 43" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='submit' tag='BUTTON' aaname='Pay and Confirm Order' /&gt;" Guid="6b1db561-2e46-453c-b1fb-1c896462ec05" InformativeScreenshot="710938786af95ef716db27f23a3e23e1.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Payment' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'Congratulations! Your o…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,1585.6" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
+            <uix:NCheckState DisplayName="Check App State 'Congratulations! Your o…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1786" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,620" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,819" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
                         <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">"order Placed successsfully"</CSharpValue>
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,377.6" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Order placed successfully and confirmation message displayed" str_in_expectedStep="Order should be placed successfully and confirmation message should appear" str_in_stepDescription="Verify that the order is successfully placed after completing the checkout process" str_in_stepName="Verify Order Placed Successfully">
+                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Order placed successfully and confirmation message displayed" str_in_expectedStep="Order should be placed successfully and confirmation message should appear" str_in_stepDescription="Verify that the order is successfully placed after completing the checkout process" str_in_stepName="Verify Order Placed Successfully">
                     <ar:passedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">reportIdLocal</CSharpValue>
@@ -403,23 +403,34 @@
                       </InArgument>
                     </ar:passedStep.str_in_testId>
                   </ar:passedStep>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Home'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b28d55c1-7b40-4f5c-92bd-85c3d172b0cc" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="automationexercise.com/payment_done/500" CVScreenId="5132df48-ff3f-4e64-b547-da78aef2afbf" DesignTimeRectangle="641, 125, 57, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Home' tag='A' /&gt;" Guid="f6956292-f46a-489a-9db2-f897c94d0d68" InformativeScreenshot="584b6c3782e77f6e106fd2f7a77d6a2c.jpg" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.ScopeSelectorArgument>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">"&lt;html app='"+Browser+"' title='Automation Exercise - Order Placed' /&gt;"</CSharpValue>
+                          </InArgument>
+                        </uix:TargetAnchorable.ScopeSelectorArgument>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,620" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,621" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
                         <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">"order failed to placed"</CSharpValue>
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,377.6" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Order confirmation message not displayed" str_in_expectedStep="Order should be placed successfully and confirmation message should appear" str_in_stepDescription="Verify that the order is successfully placed after completing the checkout process" str_in_stepName="Verify Order Placed Successfully">
+                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Order confirmation message not displayed" str_in_expectedStep="Order should be placed successfully and confirmation message should appear" str_in_stepDescription="Verify that the order is successfully placed after completing the checkout process" str_in_stepName="Verify Order Placed Successfully">
                     <ar:failedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">reportIdLocal</CSharpValue>
@@ -434,7 +445,13 @@
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
-                <uix:TargetAnchorable BrowserURL="automationexercise.com/payment_done/500" CVScreenId="6caa80be-9c60-4cb8-8e90-a6e5f21cf757" DesignTimeRectangle="369, 833, 1059, 35" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='P' aaname='Congratulations! Your order has been confirmed!' /&gt;" Guid="ec522363-32ab-4809-9ead-36d4a5a41482" InformativeScreenshot="af699b5cf68605316a68647f516fc7cb.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Order Placed' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                <uix:TargetAnchorable BrowserURL="automationexercise.com/payment_done/500" CVScreenId="6caa80be-9c60-4cb8-8e90-a6e5f21cf757" DesignTimeRectangle="369, 833, 1059, 35" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='P' aaname='Congratulations! Your order has been confirmed!' /&gt;" Guid="ec522363-32ab-4809-9ead-36d4a5a41482" InformativeScreenshot="af699b5cf68605316a68647f516fc7cb.jpg" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">"&lt;html app='"+Browser+"' title='Automation Exercise - Order Placed' /&gt;"</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
               </uix:NCheckState.Target>
             </uix:NCheckState>
           </Sequence>

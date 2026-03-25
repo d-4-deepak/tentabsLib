@@ -100,7 +100,7 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ProceedTocheckOut" sap:VirtualizedContainerService.HintSize="830,1036" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ProceedTocheckOut" sap:VirtualizedContainerService.HintSize="830,1417" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
     </Sequence.Variables>
@@ -109,7 +109,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="452,118" sap2010:WorkflowViewState.IdRef="StartTest_3" Priority="Low" TestName="ProceedTocheckoutTest">
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="452,118" sap2010:WorkflowViewState.IdRef="StartTest_4" Priority="Low" TestName="ProceedTocheckoutTest">
       <ra:StartTest.ReportId>
         <InArgument x:TypeArguments="x:Int32">
           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">reportIdLocal</CSharpValue>
@@ -126,18 +126,19 @@
         </OutArgument>
       </ra:StartTest.testId>
     </ra:StartTest>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,895" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="f0eef1ff-d991-404d-993c-1025b354973c" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1276" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="f0eef1ff-d991-404d-993c-1025b354973c" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,649" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1030" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,127" sap2010:WorkflowViewState.IdRef="Delay_1" />
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Proceed To Checkout'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f0eef1ff-d991-404d-993c-1025b354973c" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="automationexercise.com/view_cart" CVScreenId="14a1c776-43d2-4e58-bfe7-68b224b9e90b" DesignTimeRectangle="1146, 320, 163, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='do_action' tag='A' aaname='Proceed To Checkout' /&gt;" Guid="334f2c72-b68b-4d40-9a1e-703526f99d15" InformativeScreenshot="55a0f95cf6cb92a91de52f7b23c38cc8.jpg" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
@@ -149,6 +150,7 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,127" sap2010:WorkflowViewState.IdRef="Delay_2" />
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Register / Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f0eef1ff-d991-404d-993c-1025b354973c" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="automationexercise.com/view_cart" CVScreenId="3058ce6f-9584-4900-a6c9-b2f76d64ee7b" DesignTimeRectangle="744, 349, 98, 16" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='U' aaname='Register / Login' innertext='Register / Login' /&gt;" Guid="abb9b5b5-d829-4fcd-8d48-2ed7426ae04a" InformativeScreenshot="0aa70d1c556dbb2a4158698539765a0f.jpg" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
@@ -160,6 +162,7 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,127" sap2010:WorkflowViewState.IdRef="Delay_3" />
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Home'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f0eef1ff-d991-404d-993c-1025b354973c" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="automationexercise.com/login" CVScreenId="0c20841d-ebac-4bad-bc22-ab6e5dda6d44" DesignTimeRectangle="641, 125, 57, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Home' tag='A' /&gt;" Guid="c38d3df5-cb10-4b77-b12d-b6ae5f21eb46" InformativeScreenshot="584b6c3782e77f6e106fd2f7a77d6a2c.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Signup / Login' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />

@@ -1,0 +1,21 @@
+{
+  "DisplayName": "RedirectToHomePage",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "Browser",
+      "DisplayName": "Browser",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "msedge.exe",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

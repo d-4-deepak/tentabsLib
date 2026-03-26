@@ -54,8 +54,32 @@
       "DataSourceItems": null
     },
     {
-      "Name": "argument1",
-      "DisplayName": "argument1",
+      "Name": "steps",
+      "DisplayName": "steps",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "FailedScreenShotPath",
+      "DisplayName": "FailedScreenShotPath",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "failedSteps",
+      "DisplayName": "failedSteps",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,

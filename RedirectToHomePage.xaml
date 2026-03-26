@@ -95,13 +95,13 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="RedirectToHomePage" sap:VirtualizedContainerService.HintSize="830,470" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="RedirectToHomePage" sap:VirtualizedContainerService.HintSize="751,625.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Automation Exercise - Signup / Login" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,447" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="cc5766cc-1661-42b5-aa91-fd0e767811e9" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,499" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="cc5766cc-1661-42b5-aa91-fd0e767811e9" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -144,6 +144,9 @@
           <uix:TargetApp.Arguments>
             <InArgument x:TypeArguments="x:String" />
           </uix:TargetApp.Arguments>
+          <uix:TargetApp.FilePath>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.FilePath>
           <uix:TargetApp.Selector>
             <InArgument x:TypeArguments="x:String">
               <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">"&lt;html app='"+Browser+"' title='Automation Exercise - Signup / Login' /&gt;"</CSharpValue>

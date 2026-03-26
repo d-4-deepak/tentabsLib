@@ -51,6 +51,8 @@
       <x:String>atuipath_utilities.Report</x:String>
       <x:String>System.IO</x:String>
       <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -128,14 +130,10 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="RemoveFromCart" sap:VirtualizedContainerService.HintSize="921,2734" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="RemoveFromCart" sap:VirtualizedContainerService.HintSize="745,2734" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
-      <Variable x:TypeArguments="x:String" Name="productName">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Blue Top</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="Blue Top" Name="productName" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -232,7 +230,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="automationexercise.com/view_cart" CVScreenId="14f73747-67d4-47e2-8d0f-7ba7e66c028b" CvTextArea="1314, 511, 16, 16" CvTextArgument="X" CvType="Text" DesignTimeRectangle="1309, 506, 27, 27" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cart_info_table' /&gt;&lt;webctrl class='cart_quantity_delete' /&gt;" Guid="77d6eea2-a530-41bf-9745-724471eca6ab" InformativeScreenshot="e54d33ce77d43ac8bf92bdcd83f18f3c.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Checkout' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="14f73747-67d4-47e2-8d0f-7ba7e66c028b" DesignTimeRectangle="413, 497, 92, 22" ElementType="Text" FuzzyAccuracy="0.43" Guid="6406a6f5-b18c-4edd-96f5-8c2b7f215901" SearchSteps="FuzzySelector">
                         <uix:Target.FuzzySelectorArgument>
                           <InArgument x:TypeArguments="x:String">
@@ -257,7 +255,7 @@
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="automationexercise.com/view_cart" CVScreenId="da7d8d5c-6472-49ba-aa62-de6de90e46a8" CvTextArea="1325, 411, 15, 16" CvTextArgument="X" CvType="Text" DesignTimeRectangle="1327, 412, 12, 16" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cart_info_table' tag='TABLE' /&gt;&lt;webctrl tag='I' parentclass='cart_quantity_delete' /&gt;" Guid="0c28c369-904b-404c-8d91-519255e43173" InformativeScreenshot="a546744410f0bc1064d2ca89346df5f1.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Checkout' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CVScreenId="da7d8d5c-6472-49ba-aa62-de6de90e46a8" CvTextArea="383, 397, 94, 20" CvType="Text" DesignTimeRectangle="384, 397, 92, 22" ElementType="Text" FuzzyAccuracy="1" Guid="8a077fe4-662c-421b-abbf-5d07160f736e" SearchSteps="FuzzySelector, CV">
                               <uix:Target.CvTextArgument>
                                 <InArgument x:TypeArguments="x:String">

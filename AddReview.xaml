@@ -1,5 +1,8 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="AddReview" this:AddReview.Browser="chrome.exe" this:AddReview.reportIdLocal="0" this:AddReview.name="Deepak" this:AddReview.email="dg@gmail.com" this:AddReview.addComment="Deepak Kumar gupta" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ar="clr-namespace:atuipath_utilities.Report;assembly=atuipath_utilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="AddReview" this:AddReview.Browser="chrome.exe" this:AddReview.reportIdLocal="0" this:AddReview.name="Deepak" this:AddReview.email="dg@gmail.com" this:AddReview.addComment="Deepak Kumar gupta" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ar="clr-namespace:atuipath_utilities.Report;assembly=atuipath_utilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
+    <x:Property Name="FailedScreenShotPath" Type="OutArgument(x:String)" />
+    <x:Property Name="steps" Type="InOutArgument(scg:List(x:String))" />
+    <x:Property Name="failedSteps" Type="InOutArgument(scg:List(x:String))" />
     <x:Property Name="Browser" Type="InArgument(x:String)" />
     <x:Property Name="suiteIdLocal" Type="InArgument(x:String)" />
     <x:Property Name="reportIdLocal" Type="InArgument(x:Int32)" />
@@ -55,6 +58,7 @@
       <x:String>System.Security</x:String>
       <x:String>System.IO</x:String>
       <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -129,7 +133,7 @@
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AddReview" sap:VirtualizedContainerService.HintSize="830,4420" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AddReview" sap:VirtualizedContainerService.HintSize="745,6327" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
     </Sequence.Variables>
@@ -196,13 +200,13 @@
         </OutArgument>
       </ra:StartTest.testId>
     </ra:StartTest>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,3670" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="4d69d718-6956-4708-87cd-dee72fe70a07" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,5171" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="4d69d718-6956-4708-87cd-dee72fe70a07" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,3424" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,4916" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -219,7 +223,27 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
+            <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="452,172" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="Add">
+              <InvokeMethod.TargetObject>
+                <InArgument x:TypeArguments="scg:List(x:String)">
+                  <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">steps</CSharpValue>
+                </InArgument>
+              </InvokeMethod.TargetObject>
+              <InArgument x:TypeArguments="x:String">
+                <Literal x:TypeArguments="x:String">Click on Product Tab</Literal>
+              </InArgument>
+            </InvokeMethod>
             <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,230" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="5" ScopeIdentifier="4d69d718-6956-4708-87cd-dee72fe70a07" Version="V5" />
+            <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="452,172" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" MethodName="Add">
+              <InvokeMethod.TargetObject>
+                <InArgument x:TypeArguments="scg:List(x:String)">
+                  <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">steps</CSharpValue>
+                </InArgument>
+              </InvokeMethod.TargetObject>
+              <InArgument x:TypeArguments="x:String">
+                <Literal x:TypeArguments="x:String">Scroll Down To Products section</Literal>
+              </InArgument>
+            </InvokeMethod>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'View Product'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4d69d718-6956-4708-87cd-dee72fe70a07" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="automationexercise.com/products" CVScreenId="c311d8d6-4020-4052-ab42-a7c8d0096fa4" DesignTimeRectangle="543, 539, 247, 38" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='View Product' tag='A' href='/product_details/1' /&gt;" Guid="b0d5d8f6-5369-4e98-8549-0021b5b2170b" InformativeScreenshot="9b5ad6cffd65b3b7548950a9b2d5f2ce.jpg" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
@@ -231,6 +255,16 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
+            <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="452,172" sap2010:WorkflowViewState.IdRef="InvokeMethod_2" MethodName="Add">
+              <InvokeMethod.TargetObject>
+                <InArgument x:TypeArguments="scg:List(x:String)">
+                  <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">steps</CSharpValue>
+                </InArgument>
+              </InvokeMethod.TargetObject>
+              <InArgument x:TypeArguments="x:String">
+                <Literal x:TypeArguments="x:String">Click on View Products</Literal>
+              </InArgument>
+            </InvokeMethod>
             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="4d69d718-6956-4708-87cd-dee72fe70a07" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="automationexercise.com/product_details/1" CVScreenId="43f4a867-c619-44d6-990d-30def1e545a9" CvElementArea="561, 427, 380, 38" CvType="InputBox" DesignTimeRectangle="564, 429, 375, 36" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='name' tag='INPUT' placeholder='Your Name' /&gt;" Guid="d087f639-130d-4689-9129-9ff04e62e07f" InformativeScreenshot="d66e97afd49c87e92a0583c9dc1440dc.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Product Details' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
@@ -291,12 +325,32 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
+            <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="452,172" sap2010:WorkflowViewState.IdRef="InvokeMethod_4" MethodName="Add">
+              <InvokeMethod.TargetObject>
+                <InArgument x:TypeArguments="scg:List(x:String)">
+                  <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">steps</CSharpValue>
+                </InArgument>
+              </InvokeMethod.TargetObject>
+              <InArgument x:TypeArguments="x:String">
+                <Literal x:TypeArguments="x:String">Type Essentials Details</Literal>
+              </InArgument>
+            </InvokeMethod>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4d69d718-6956-4708-87cd-dee72fe70a07" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="automationexercise.com/product_details/1" CVScreenId="d921a8e9-5457-4a2c-b9a8-21551dab821f" DesignTimeRectangle="1277, 700, 68, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='button-review' tag='BUTTON' type='submit' /&gt;" Guid="fc2a8dae-fc97-437a-91bf-dd1e3702d262" InformativeScreenshot="c34569b2919e890f42141bedd7399b64.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Exercise - Product Details' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'Thank you for your revi…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1786" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="4d69d718-6956-4708-87cd-dee72fe70a07" Version="V5">
+            <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="452,172" sap2010:WorkflowViewState.IdRef="InvokeMethod_5" MethodName="Add">
+              <InvokeMethod.TargetObject>
+                <InArgument x:TypeArguments="scg:List(x:String)">
+                  <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">steps</CSharpValue>
+                </InArgument>
+              </InvokeMethod.TargetObject>
+              <InArgument x:TypeArguments="x:String">
+                <Literal x:TypeArguments="x:String">Click on Submit Button</Literal>
+              </InArgument>
+            </InvokeMethod>
+            <uix:NCheckState DisplayName="Check App State 'Thank you for your revi…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,2418" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="4d69d718-6956-4708-87cd-dee72fe70a07" Version="V5">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,819" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
@@ -337,7 +391,7 @@
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,621" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,1253" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -350,7 +404,7 @@
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Review submission confirmation message not displayed" str_in_expectedStep="Review submission confirmation message should be displayed" str_in_stepDescription="Verify that the review is submitted successfully and the confirmation message is displayed" str_in_stepName="Verify Review Submission">
+                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Review submission confirmation message not displayed" str_in_expectedStep="Review submission confirmation message is displayed" str_in_stepDescription="Verify that the review is submitted successfully and the confirmation message is displayed" str_in_stepName="Verify Review Submission">
                     <ar:failedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">reportIdLocal</CSharpValue>
@@ -362,6 +416,37 @@
                       </InArgument>
                     </ar:failedStep.str_in_testId>
                   </ar:failedStep>
+                  <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">FailedScreenShotPath</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30" xml:space="preserve">Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + 
+"\\Downloads\\FailedScreenShots\\error_" + 
+DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png"</CSharpValue>
+                      </InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NTakeScreenshot DisplayName="Take Screenshot" FileNameMode="None" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,281" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" ScopeIdentifier="4d69d718-6956-4708-87cd-dee72fe70a07" Version="V5">
+                    <uix:NTakeScreenshot.FileName>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">FailedScreenShotPath</CSharpValue>
+                      </InArgument>
+                    </uix:NTakeScreenshot.FileName>
+                  </uix:NTakeScreenshot>
+                  <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="416,163" sap2010:WorkflowViewState.IdRef="InvokeMethod_6" MethodName="Add">
+                    <InvokeMethod.TargetObject>
+                      <InArgument x:TypeArguments="scg:List(x:String)">
+                        <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">failedSteps</CSharpValue>
+                      </InArgument>
+                    </InvokeMethod.TargetObject>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String">Thank you for your review, is not displayed</Literal>
+                    </InArgument>
+                  </InvokeMethod>
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
@@ -402,5 +487,35 @@
         </uix:TargetApp>
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
+    <If sap:VirtualizedContainerService.HintSize="488,406" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Condition>
+        <InArgument x:TypeArguments="x:Boolean">
+          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">failedSteps.Count()&gt;0</CSharpValue>
+        </InArgument>
+      </If.Condition>
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,182" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Throw sap:VirtualizedContainerService.HintSize="416,118" sap2010:WorkflowViewState.IdRef="Throw_1">
+            <InArgument x:TypeArguments="s:Exception">
+              <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">new System.Exception("Add Review Failed")</CSharpValue>
+            </InArgument>
+          </Throw>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
   </Sequence>
 </Activity>

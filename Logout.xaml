@@ -121,7 +121,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Logout" sap:VirtualizedContainerService.HintSize="834,3796" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Logout" sap:VirtualizedContainerService.HintSize="745,3796" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
     </Sequence.Variables>
@@ -176,7 +176,7 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="524,118" sap2010:WorkflowViewState.IdRef="StartTest_2" Priority="Low" TestName="logout test">
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="524,118" sap2010:WorkflowViewState.IdRef="StartTest_2" Priority="Medium" TestName="logout test">
       <ra:StartTest.ReportId>
         <InArgument x:TypeArguments="x:Int32">
           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">reportIdLocal</CSharpValue>
@@ -332,7 +332,7 @@
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.CloseMode>
         <InArgument x:TypeArguments="uix:NAppCloseMode">
-          <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">UiPath.UIAutomationNext.Enums.NAppCloseMode.Never</CSharpValue>
+          <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">UiPath.UIAutomationNext.Enums.NAppCloseMode.Always</CSharpValue>
         </InArgument>
       </uix:NApplicationCard.CloseMode>
       <uix:NApplicationCard.OCREngine>

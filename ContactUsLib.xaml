@@ -419,9 +419,7 @@
                   <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">steps</CSharpValue>
                 </InArgument>
               </InvokeMethod.TargetObject>
-              <InArgument x:TypeArguments="x:String">
-                <Literal x:TypeArguments="x:String" xml:space="preserve">Click on Ok </Literal>
-              </InArgument>
+              <InArgument x:TypeArguments="x:String" xml:space="preserve">Click on Ok </InArgument>
             </InvokeMethod>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd2b2b6a-4d0e-4afb-8344-e37bd9371a51" Version="V5">
               <uix:NClick.Target>
@@ -454,7 +452,7 @@
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Contact form submitted successfully and confirmation message displayed" str_in_expectedStep="Contact form should be submitted successfully and confirmation message should appear" str_in_stepDescription="Verify that the contact form is submitted successfully and confirmation message is displayed" str_in_stepName="Verify Contact Form Submitted">
+                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Contact form submitted successfully and confirmation message displayed" str_in_expectedStep="Contact form submitted successfully and confirmation message displayed" str_in_stepDescription="Verify that the contact form is submitted successfully and confirmation message is displayed" str_in_stepName="Verify Contact Form Submitted">
                     <ar:passedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">reportIdLocal</CSharpValue>
@@ -493,7 +491,7 @@
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Contact form confirmation message not displayed" str_in_expectedStep="Contact form should be submitted successfully and confirmation message should appear" str_in_stepDescription="Verify that the contact form is submitted successfully and confirmation message is displayed" str_in_stepName="Verify Contact Form Submitted">
+                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="'Contact form submitted successfully'confirmation message not appeared" str_in_expectedStep="'Contact form submitted successfully' confirmation message should appear" str_in_stepDescription="Verify that the contact form is submitted successfully and confirmation message is displayed" str_in_stepName="Verify Contact Form Submitted">
                     <ar:failedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">reportIdLocal</CSharpValue>
@@ -532,9 +530,7 @@ DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png"</CSharpValue>
                         <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">failedSteps</CSharpValue>
                       </InArgument>
                     </InvokeMethod.TargetObject>
-                    <InArgument x:TypeArguments="x:String">
-                      <Literal x:TypeArguments="x:String">Contact form confirmation message not displayed</Literal>
-                    </InArgument>
+                    <InArgument x:TypeArguments="x:String">Contact form confirmation message not displayed</InArgument>
                   </InvokeMethod>
                 </Sequence>
               </uix:NCheckState.IfNotExists>

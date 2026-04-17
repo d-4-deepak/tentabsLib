@@ -211,7 +211,7 @@
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Test Cases page displayed successfully" str_in_expectedStep="User should be navigated to the Test Cases page" str_in_stepDescription="Verify that the user is successfully navigated to the Test Cases page" str_in_stepName="Verify Test Cases Page Navigation">
+                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Test Cases page displayed successfully" str_in_expectedStep="Test Cases page displayed successfully" str_in_stepDescription="Verify that the user is successfully navigated to the Test Cases page" str_in_stepName="Verify Test Cases Page Navigation">
                     <ar:passedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">reportIdLocal</CSharpValue>
@@ -250,7 +250,7 @@
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Test Cases page did not appear" str_in_expectedStep="User should be navigated to the Test Cases page" str_in_stepDescription="Verify that the user is successfully navigated to the Test Cases page" str_in_stepName="Verify Test Cases Page Navigation">
+                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Test Cases page did not appear" str_in_expectedStep="Test Cases page should appear" str_in_stepDescription="Verify that the user is successfully navigated to the Test Cases page" str_in_stepName="Verify Test Cases Page Navigation">
                     <ar:failedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">reportIdLocal</CSharpValue>

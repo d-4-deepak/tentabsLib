@@ -187,7 +187,7 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="488,118" sap2010:WorkflowViewState.IdRef="StartTest_4" Priority="Low" TestName="CheckOut test">
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="488,118" sap2010:WorkflowViewState.IdRef="StartTest_4" Priority="High" TestName="CheckOut test">
       <ra:StartTest.ReportId>
         <InArgument x:TypeArguments="x:Int32">
           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">reportIdLocal</CSharpValue>
@@ -486,7 +486,7 @@
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Order placed successfully and confirmation message displayed" str_in_expectedStep="Order should be placed successfully and confirmation message should appear" str_in_stepDescription="Verify that the order is successfully placed after completing the checkout process" str_in_stepName="Verify Order Placed Successfully">
+                  <ar:passedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Order placed successfully and confirmation message displayed" str_in_expectedStep="Order placed successfully and confirmation message displayed" str_in_stepDescription="Verify that the order is successfully placed after completing the checkout process" str_in_stepName="Verify Order Placed Successfully">
                     <ar:passedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">reportIdLocal</CSharpValue>

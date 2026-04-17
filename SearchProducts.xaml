@@ -172,7 +172,7 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="560,118" sap2010:WorkflowViewState.IdRef="StartTest_3" Priority="Low" TestName="Search product test">
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="560,118" sap2010:WorkflowViewState.IdRef="StartTest_3" Priority="High" TestName="Search product test">
       <ra:StartTest.ReportId>
         <InArgument x:TypeArguments="x:Int32">
           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">reportIdLocal</CSharpValue>
@@ -239,7 +239,7 @@
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="488,387" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Products page opened successfully" str_in_expectedStep="Products page should open after clicking Products" str_in_stepDescription="Verify that the user is successfully navigated to the Products page" str_in_stepName="Verify Products Page Navigation">
+                  <ar:passedStep sap:VirtualizedContainerService.HintSize="488,387" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Products page opened after clicking on Products" str_in_expectedStep="Products page should open after clicking on Products" str_in_stepDescription="Verify that the user is successfully navigated to the Products page" str_in_stepName="Verify Products Page Navigation">
                     <ar:passedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">reportIdLocal</CSharpValue>
@@ -501,7 +501,7 @@ DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png"</CSharpValue>
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ar:failedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="failedStep_3" str_in_actualStep="Searched product did not appear " str_in_expectedStep="Searched product should appear in the search results" str_in_stepDescription="Verify that the searched product is displayed in the search results page" str_in_stepName="Verify Searched Product Appears">
+                        <ar:failedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="failedStep_3" str_in_actualStep="Searched product did not appear in the search results" str_in_expectedStep="Searched product should appear in the search results" str_in_stepDescription="Verify that the searched product is displayed in the search results page" str_in_stepName="Verify Searched Product Appears">
                           <ar:failedStep.str_in_reportId>
                             <InArgument x:TypeArguments="x:Int32">
                               <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">reportIdLocal</CSharpValue>
@@ -566,7 +566,7 @@ DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png"</CSharpValue>
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Products page did not open" str_in_expectedStep="Products page should open after clicking Products" str_in_stepDescription="Verify that the user is successfully navigated to the Products page" str_in_stepName="Verify Products Page Navigation">
+                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Products page did not open after clicking Products" str_in_expectedStep="Products page should open after clicking Products" str_in_stepDescription="Verify that the user is successfully navigated to the Products page" str_in_stepName="Verify Products Page Navigation">
                     <ar:failedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">reportIdLocal</CSharpValue>

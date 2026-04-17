@@ -200,7 +200,7 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="666,118" sap2010:WorkflowViewState.IdRef="StartTest_4" Priority="Low" TestName="Registeration Test">
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="666,118" sap2010:WorkflowViewState.IdRef="StartTest_4" Priority="High" TestName="Registeration Test">
       <ra:StartTest.ReportId>
         <InArgument x:TypeArguments="x:Int32">
           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_79">reportIdLocal</CSharpValue>
@@ -244,7 +244,7 @@
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="594,387" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Home page displayed" str_in_expectedStep="Home page should be visible" str_in_stepDescription="Verify that the home page loads successfully" str_in_stepName="Verify Home Page Visible">
+                  <ar:passedStep sap:VirtualizedContainerService.HintSize="594,387" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Home page displayed" str_in_expectedStep="Home page displayed" str_in_stepDescription="Verify that the home page loads successfully" str_in_stepName="Verify Home Page Visible">
                     <ar:passedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">reportIdLocal</CSharpValue>
@@ -262,9 +262,7 @@
                         <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_114">steps</CSharpValue>
                       </InArgument>
                     </InvokeMethod.TargetObject>
-                    <InArgument x:TypeArguments="x:String">
-                      <Literal x:TypeArguments="x:String">Click on Login/SignUp Tab</Literal>
-                    </InArgument>
+                    <InArgument x:TypeArguments="x:String">Click on Login/SignUp Tab</InArgument>
                   </InvokeMethod>
                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Signup / Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                     <uix:NClick.Target>
@@ -321,7 +319,7 @@
                             </InArgument>
                           </ui:LogMessage.Message>
                         </ui:LogMessage>
-                        <ar:passedStep sap:VirtualizedContainerService.HintSize="558,387" sap2010:WorkflowViewState.IdRef="passedStep_2" str_in_actualStep="Signup page appeared successfully" str_in_expectedStep="Signup page should appear" str_in_stepDescription="Verify that the Signup page is displayed after clicking Signup/Login" str_in_stepName="Verify Signup Page Visible">
+                        <ar:passedStep sap:VirtualizedContainerService.HintSize="558,387" sap2010:WorkflowViewState.IdRef="passedStep_2" str_in_actualStep="Signup page appeared " str_in_expectedStep="Signup page appeared " str_in_stepDescription="Verify that the Signup page is displayed after clicking Signup/Login" str_in_stepName="Verify Signup Page Visible">
                           <ar:passedStep.str_in_reportId>
                             <InArgument x:TypeArguments="x:Int32">
                               <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">reportIdLocal</CSharpValue>
@@ -339,9 +337,7 @@
                               <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_115">steps</CSharpValue>
                             </InArgument>
                           </InvokeMethod.TargetObject>
-                          <InArgument x:TypeArguments="x:String">
-                            <Literal x:TypeArguments="x:String">Enter Name And Email Address</Literal>
-                          </InArgument>
+                          <InArgument x:TypeArguments="x:String">Enter Name And Email Address</InArgument>
                         </InvokeMethod>
                         <uix:NTypeInto ActivateBefore="True" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                           <uix:NTypeInto.ClickBeforeMode>
@@ -420,9 +416,7 @@
                               <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_116">steps</CSharpValue>
                             </InArgument>
                           </InvokeMethod.TargetObject>
-                          <InArgument x:TypeArguments="x:String">
-                            <Literal x:TypeArguments="x:String">Click on Signup Button</Literal>
-                          </InArgument>
+                          <InArgument x:TypeArguments="x:String">Click on Signup Button</InArgument>
                         </InvokeMethod>
                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Signup'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                           <uix:NClick.Target>
@@ -457,7 +451,7 @@
                                   </InArgument>
                                 </ui:LogMessage.Message>
                               </ui:LogMessage>
-                              <ar:passedStep sap:VirtualizedContainerService.HintSize="522,387" sap2010:WorkflowViewState.IdRef="passedStep_3" str_in_actualStep="Enter Account Information page appeared successfully" str_in_expectedStep="Enter Account Information page should appear" str_in_stepDescription="Verify that the ENTER ACCOUNT INFORMATION page is displayed after clicking Signup" str_in_stepName="Verify Enter Account Information Page">
+                              <ar:passedStep sap:VirtualizedContainerService.HintSize="522,387" sap2010:WorkflowViewState.IdRef="passedStep_3" str_in_actualStep="Enter Account Information page appeared successfully" str_in_expectedStep="Enter Account Information page appeared" str_in_stepDescription="Verify that the ENTER ACCOUNT INFORMATION page is displayed after clicking Signup" str_in_stepName="Verify Enter Account Information Page">
                                 <ar:passedStep.str_in_reportId>
                                   <InArgument x:TypeArguments="x:Int32">
                                     <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">reportIdLocal</CSharpValue>
@@ -475,9 +469,7 @@
                                     <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_117">steps</CSharpValue>
                                   </InArgument>
                                 </InvokeMethod.TargetObject>
-                                <InArgument x:TypeArguments="x:String">
-                                  <Literal x:TypeArguments="x:String">Enter all Required Details on Information Page</Literal>
-                                </InArgument>
+                                <InArgument x:TypeArguments="x:String">Enter all Required Details on Information Page</InArgument>
                               </InvokeMethod>
                               <If sap:VirtualizedContainerService.HintSize="522,1007" sap2010:WorkflowViewState.IdRef="If_1">
                                 <If.Condition>
@@ -1100,9 +1092,7 @@
                                     <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_118">steps</CSharpValue>
                                   </InArgument>
                                 </InvokeMethod.TargetObject>
-                                <InArgument x:TypeArguments="x:String">
-                                  <Literal x:TypeArguments="x:String">Click on Create Account</Literal>
-                                </InArgument>
+                                <InArgument x:TypeArguments="x:String">Click on Create Account</InArgument>
                               </InvokeMethod>
                               <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create Account'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,198" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                 <uix:NClick.Target>
@@ -1140,7 +1130,7 @@
                                         </InArgument>
                                       </ui:LogMessage.Message>
                                     </ui:LogMessage>
-                                    <ar:passedStep sap:VirtualizedContainerService.HintSize="486,387" sap2010:WorkflowViewState.IdRef="passedStep_4" str_in_actualStep="Account created message displayed" str_in_expectedStep="ACCOUNT CREATED message should be displayed" str_in_stepDescription="Verify that the ACCOUNT CREATED confirmation message is displayed after registration" str_in_stepName="Verify Account Created Message">
+                                    <ar:passedStep sap:VirtualizedContainerService.HintSize="486,387" sap2010:WorkflowViewState.IdRef="passedStep_4" str_in_actualStep="Account created message displayed" str_in_expectedStep="Account created message displayed" str_in_stepDescription="Verify that the ACCOUNT CREATED confirmation message is displayed after registration" str_in_stepName="Verify Account Created Message">
                                       <ar:passedStep.str_in_reportId>
                                         <InArgument x:TypeArguments="x:Int32">
                                           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">reportIdLocal</CSharpValue>
@@ -1158,9 +1148,7 @@
                                           <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_119">steps</CSharpValue>
                                         </InArgument>
                                       </InvokeMethod.TargetObject>
-                                      <InArgument x:TypeArguments="x:String">
-                                        <Literal x:TypeArguments="x:String">Click on Continue</Literal>
-                                      </InArgument>
+                                      <InArgument x:TypeArguments="x:String">Click on Continue</InArgument>
                                     </InvokeMethod>
                                     <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="2" DisplayName="Click 'Continue'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,198" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="993df6ba-1c17-402c-94a7-35bd20cc2d6a" Version="V5">
                                       <uix:NClick.Target>
@@ -1231,7 +1219,7 @@
                                             </ar:passedStep.str_in_actualStep>
                                             <ar:passedStep.str_in_expectedStep>
                                               <InArgument x:TypeArguments="x:String">
-                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">"Username should match the registered name: " + name</CSharpValue>
+                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_133">"Username displayed on homepage: " + name</CSharpValue>
                                               </InArgument>
                                             </ar:passedStep.str_in_expectedStep>
                                             <ar:passedStep.str_in_reportId>
@@ -1269,7 +1257,7 @@
                                             </ar:failedStep.str_in_actualStep>
                                             <ar:failedStep.str_in_expectedStep>
                                               <InArgument x:TypeArguments="x:String">
-                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_76">"Expected username: " + name</CSharpValue>
+                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_134">"Username displayed: "+ name</CSharpValue>
                                               </InArgument>
                                             </ar:failedStep.str_in_expectedStep>
                                             <ar:failedStep.str_in_reportId>
@@ -1310,9 +1298,7 @@ DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png"</CSharpValue>
                                                 <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_124">failedSteps</CSharpValue>
                                               </InArgument>
                                             </InvokeMethod.TargetObject>
-                                            <InArgument x:TypeArguments="x:String">
-                                              <Literal x:TypeArguments="x:String">Registered username is not displayed on the home page after account creation</Literal>
-                                            </InArgument>
+                                            <InArgument x:TypeArguments="x:String">Registered username is not displayed on the home page after account creation</InArgument>
                                           </InvokeMethod>
                                         </Sequence>
                                       </If.Else>
@@ -1349,7 +1335,7 @@ DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png"</CSharpValue>
                                         </InArgument>
                                       </ui:LogMessage.Message>
                                     </ui:LogMessage>
-                                    <ar:failedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="failedStep_4" str_in_actualStep="Account created message not displayed" str_in_expectedStep="ACCOUNT CREATED message should be displayed" str_in_stepDescription="Verify that the ACCOUNT CREATED confirmation message is displayed after registration" str_in_stepName="Verify Account Created Message">
+                                    <ar:failedStep sap:VirtualizedContainerService.HintSize="416,387" sap2010:WorkflowViewState.IdRef="failedStep_4" str_in_actualStep="'ACCOUNT CREATED' message not displayed" str_in_expectedStep="'ACCOUNT CREATED' message should be displayed" str_in_stepDescription="Verify that the ACCOUNT CREATED confirmation message is displayed after registration" str_in_stepName="Verify Account Created Message">
                                       <ar:failedStep.str_in_reportId>
                                         <InArgument x:TypeArguments="x:Int32">
                                           <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">reportIdLocal</CSharpValue>
@@ -1388,9 +1374,7 @@ DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png"</CSharpValue>
                                           <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_125">failedSteps</CSharpValue>
                                         </InArgument>
                                       </InvokeMethod.TargetObject>
-                                      <InArgument x:TypeArguments="x:String">
-                                        <Literal x:TypeArguments="x:String">Account created message not displayed</Literal>
-                                      </InArgument>
+                                      <InArgument x:TypeArguments="x:String">Account created message not displayed</InArgument>
                                     </InvokeMethod>
                                   </Sequence>
                                 </uix:NCheckState.IfNotExists>
@@ -1459,9 +1443,7 @@ DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png"</CSharpValue>
                                     <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_130">failedSteps</CSharpValue>
                                   </InArgument>
                                 </InvokeMethod.TargetObject>
-                                <InArgument x:TypeArguments="x:String">
-                                  <Literal x:TypeArguments="x:String">Enter Account Information page did not appear</Literal>
-                                </InArgument>
+                                <InArgument x:TypeArguments="x:String">Enter Account Information page did not appear</InArgument>
                               </InvokeMethod>
                             </Sequence>
                           </uix:NCheckState.IfNotExists>
@@ -1537,7 +1519,7 @@ DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png"</CSharpValue>
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Home page not displayed" str_in_expectedStep="Home page should be visible" str_in_stepDescription="Verify that the home page loads successfully" str_in_stepName="Verify Home Page Visible">
+                  <ar:failedStep sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Home page not displayed" str_in_expectedStep="Home page should display" str_in_stepDescription="Verify that the home page loads successfully" str_in_stepName="Verify Home Page Visible">
                     <ar:failedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">reportIdLocal</CSharpValue>

@@ -141,7 +141,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="745,13277" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="918,13115" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testIdLocal" />
     </Sequence.Variables>
@@ -196,34 +196,23 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="596,280" sap2010:WorkflowViewState.IdRef="CommentOut_6">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,169" sap2010:WorkflowViewState.IdRef="Sequence_18">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="416,109" sap2010:WorkflowViewState.IdRef="StartTest_4" Priority="Low" TestName="Login test">
-            <ra:StartTest.ReportId>
-              <InArgument x:TypeArguments="x:Int32">
-                <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">reportIdLocal</CSharpValue>
-              </InArgument>
-            </ra:StartTest.ReportId>
-            <ra:StartTest.SuiteId>
-              <InArgument x:TypeArguments="x:String">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">suiteIdLocal</CSharpValue>
-              </InArgument>
-            </ra:StartTest.SuiteId>
-            <ra:StartTest.testId>
-              <OutArgument x:TypeArguments="x:String">
-                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">testIdLocal</CSharpReference>
-              </OutArgument>
-            </ra:StartTest.testId>
-          </ra:StartTest>
-        </Sequence>
-      </ui:CommentOut.Body>
-    </ui:CommentOut>
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="596,118" sap2010:WorkflowViewState.IdRef="StartTest_5" Priority="High" TestName="Login test">
+      <ra:StartTest.ReportId>
+        <InArgument x:TypeArguments="x:Int32">
+          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">reportIdLocal</CSharpValue>
+        </InArgument>
+      </ra:StartTest.ReportId>
+      <ra:StartTest.SuiteId>
+        <InArgument x:TypeArguments="x:String">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">suiteIdLocal</CSharpValue>
+        </InArgument>
+      </ra:StartTest.SuiteId>
+      <ra:StartTest.testId>
+        <OutArgument x:TypeArguments="x:String">
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">testIdLocal</CSharpReference>
+        </OutArgument>
+      </ra:StartTest.testId>
+    </ra:StartTest>
     <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="596,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
@@ -272,9 +261,7 @@
                   <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">steps</CSharpValue>
                 </InArgument>
               </InvokeMethod.TargetObject>
-              <InArgument x:TypeArguments="x:String">
-                <Literal x:TypeArguments="x:String" xml:space="preserve">Navigated to 'https://automationexercise.com/' </Literal>
-              </InArgument>
+              <InArgument x:TypeArguments="x:String" xml:space="preserve">Navigated to 'https://automationexercise.com/' </InArgument>
             </InvokeMethod>
             <uix:NCheckState DisplayName="Check App State 'Home'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="560,11113" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="519bd25a-965f-4535-bf47-dbbf5b8dbb1c" Version="V5">
               <uix:NCheckState.IfExists>
@@ -327,9 +314,7 @@
                         <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">steps</CSharpValue>
                       </InArgument>
                     </InvokeMethod.TargetObject>
-                    <InArgument x:TypeArguments="x:String">
-                      <Literal x:TypeArguments="x:String">Clicked on login/Signup</Literal>
-                    </InArgument>
+                    <InArgument x:TypeArguments="x:String">Clicked on login/Signup</InArgument>
                   </InvokeMethod>
                   <uix:NCheckState DisplayName="Check App State 'Login'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="524,8335" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="519bd25a-965f-4535-bf47-dbbf5b8dbb1c" Version="V5">
                     <uix:NCheckState.IfExists>
@@ -393,9 +378,7 @@
                               <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">steps</CSharpValue>
                             </InArgument>
                           </InvokeMethod.TargetObject>
-                          <InArgument x:TypeArguments="x:String">
-                            <Literal x:TypeArguments="x:String">Enter Email</Literal>
-                          </InArgument>
+                          <InArgument x:TypeArguments="x:String">Enter Email</InArgument>
                         </InvokeMethod>
                         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info">
                           <ui:LogMessage.Message>
@@ -443,9 +426,7 @@
                               <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">steps</CSharpValue>
                             </InArgument>
                           </InvokeMethod.TargetObject>
-                          <InArgument x:TypeArguments="x:String">
-                            <Literal x:TypeArguments="x:String">Enter Password</Literal>
-                          </InArgument>
+                          <InArgument x:TypeArguments="x:String">Enter Password</InArgument>
                         </InvokeMethod>
                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,198" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="519bd25a-965f-4535-bf47-dbbf5b8dbb1c" Version="V5">
                           <uix:NClick.Target>
@@ -471,9 +452,7 @@
                               <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">steps</CSharpValue>
                             </InArgument>
                           </InvokeMethod.TargetObject>
-                          <InArgument x:TypeArguments="x:String">
-                            <Literal x:TypeArguments="x:String">Clicked on Login Button</Literal>
-                          </InArgument>
+                          <InArgument x:TypeArguments="x:String">Clicked on Login Button</InArgument>
                         </InvokeMethod>
                         <uix:NCheckState DisplayName="Check App State 'Logout'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="488,4355" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="519bd25a-965f-4535-bf47-dbbf5b8dbb1c" Version="V5">
                           <uix:NCheckState.IfExists>
@@ -624,7 +603,7 @@ DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png"</CSharpValue>
                                         </InArgument>
                                       </Assign.Value>
                                     </Assign>
-                                    <uix:NTakeScreenshot DisplayName="Take Screenshot" FileNameMode="None" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,281" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" ScopeIdentifier="519bd25a-965f-4535-bf47-dbbf5b8dbb1c" Version="V5">
+                                    <uix:NTakeScreenshot DisplayName="Take Screenshot 'CANVAS'" FileNameMode="None" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,281" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" ScopeIdentifier="519bd25a-965f-4535-bf47-dbbf5b8dbb1c" Version="V5">
                                       <uix:NTakeScreenshot.FileName>
                                         <InArgument x:TypeArguments="x:String">
                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_82">FailedScreenShotPath</CSharpValue>
@@ -637,9 +616,7 @@ DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png"</CSharpValue>
                                           <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">failedSteps</CSharpValue>
                                         </InArgument>
                                       </InvokeMethod.TargetObject>
-                                      <InArgument x:TypeArguments="x:String">
-                                        <Literal x:TypeArguments="x:String">Login Failed UserName Did not displayed</Literal>
-                                      </InArgument>
+                                      <InArgument x:TypeArguments="x:String">Login Failed UserName Did not displayed</InArgument>
                                     </InvokeMethod>
                                   </Sequence>
                                 </If.Else>
@@ -699,9 +676,7 @@ DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png"</CSharpValue>
                                     <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">failedSteps</CSharpValue>
                                   </InArgument>
                                 </InvokeMethod.TargetObject>
-                                <InArgument x:TypeArguments="x:String">
-                                  <Literal x:TypeArguments="x:String">User failed to redirect to the dashboard page after clicking on Login</Literal>
-                                </InArgument>
+                                <InArgument x:TypeArguments="x:String">User failed to redirect to the dashboard page after clicking on Login</InArgument>
                               </InvokeMethod>
                             </Sequence>
                           </uix:NCheckState.IfNotExists>
@@ -770,9 +745,7 @@ DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png"</CSharpValue>
                               <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">failedSteps</CSharpValue>
                             </InArgument>
                           </InvokeMethod.TargetObject>
-                          <InArgument x:TypeArguments="x:String">
-                            <Literal x:TypeArguments="x:String">Login page did not appear</Literal>
-                          </InArgument>
+                          <InArgument x:TypeArguments="x:String">Login page did not appear</InArgument>
                         </InvokeMethod>
                       </Sequence>
                     </uix:NCheckState.IfNotExists>
@@ -841,9 +814,7 @@ DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png"</CSharpValue>
                         <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">failedSteps</CSharpValue>
                       </InArgument>
                     </InvokeMethod.TargetObject>
-                    <InArgument x:TypeArguments="x:String">
-                      <Literal x:TypeArguments="x:String">Home Page Not displayed</Literal>
-                    </InArgument>
+                    <InArgument x:TypeArguments="x:String">Home Page Not displayed</InArgument>
                   </InvokeMethod>
                 </Sequence>
               </uix:NCheckState.IfNotExists>

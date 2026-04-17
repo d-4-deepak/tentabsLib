@@ -253,7 +253,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ar:passedStep sap:VirtualizedContainerService.HintSize="452,387" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Subscription section displayed successfully" str_in_expectedStep="Subscription section should be visible on the page" str_in_stepDescription="Verify that the subscription section is displayed on the page" str_in_stepName="Verify Subscription Section Visible">
+                  <ar:passedStep sap:VirtualizedContainerService.HintSize="452,387" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_actualStep="Subscription section displayed successfully" str_in_expectedStep="Subscription section displayed successfully" str_in_stepDescription="Verify that the subscription section is displayed on the page" str_in_stepName="Verify Subscription Section Visible">
                     <ar:passedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">reportIdLocal</CSharpValue>
@@ -329,7 +329,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ar:passedStep sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="passedStep_2" str_in_actualStep="Subscription email input box is empty after submission" str_in_expectedStep="Subscription email input box should be empty after submitting email" str_in_stepDescription="Verify Input box Empty after submitting" str_in_stepName="Verify Input box Empty">
+                        <ar:passedStep sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="passedStep_2" str_in_actualStep="Subscription email input box is empty after submission" str_in_expectedStep="Subscription email input box is empty after submission" str_in_stepDescription="Verify Input box Empty after submitting" str_in_stepName="Verify Input box Empty">
                           <ar:passedStep.str_in_reportId>
                             <InArgument x:TypeArguments="x:Int32">
                               <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">reportIdLocal</CSharpValue>
@@ -405,7 +405,7 @@ DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png"</CSharpValue>
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ar:failedStep sap:VirtualizedContainerService.HintSize="452,387" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Subscription section not displayed" str_in_expectedStep="Subscription section should be visible on the page" str_in_stepDescription="Verify that the subscription section is displayed on the page" str_in_stepName="Verify Subscription Section Visible">
+                  <ar:failedStep sap:VirtualizedContainerService.HintSize="452,387" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_actualStep="Subscription section is not displayed" str_in_expectedStep="Subscription section should be display" str_in_stepDescription="Verify that the subscription section is displayed on the page" str_in_stepName="Verify Subscription Section Visible">
                     <ar:failedStep.str_in_reportId>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">reportIdLocal</CSharpValue>
